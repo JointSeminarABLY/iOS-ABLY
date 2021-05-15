@@ -21,6 +21,8 @@
 		EDAB1A43264FAF7100C2C331 /* HeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A41264FAF7100C2C331 /* HeaderTVC.swift */; };
 		EDAB1A44264FAF7100C2C331 /* HeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A42264FAF7100C2C331 /* HeaderTVC.xib */; };
 		EDAB1A4A264FDEE600C2C331 /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A49264FDEE600C2C331 /* Extension+UIColor.swift */; };
+		EDAB1A4D264FE6A700C2C331 /* MainBottomTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A4B264FE6A700C2C331 /* MainBottomTVC.swift */; };
+		EDAB1A4E264FE6A700C2C331 /* MainBottomTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A4C264FE6A700C2C331 /* MainBottomTVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		EDAB1A41264FAF7100C2C331 /* HeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTVC.swift; sourceTree = "<group>"; };
 		EDAB1A42264FAF7100C2C331 /* HeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTVC.xib; sourceTree = "<group>"; };
 		EDAB1A49264FDEE600C2C331 /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
+		EDAB1A4B264FE6A700C2C331 /* MainBottomTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBottomTVC.swift; sourceTree = "<group>"; };
+		EDAB1A4C264FE6A700C2C331 /* MainBottomTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainBottomTVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				EDAB1A42264FAF7100C2C331 /* HeaderTVC.xib */,
+				EDAB1A4C264FE6A700C2C331 /* MainBottomTVC.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 		EDAB1A45264FAF9100C2C331 /* TVC */ = {
 			isa = PBXGroup;
 			children = (
+				EDAB1A4B264FE6A700C2C331 /* MainBottomTVC.swift */,
 				EDAB1A41264FAF7100C2C331 /* HeaderTVC.swift */,
 			);
 			path = TVC;
@@ -277,6 +283,7 @@
 			files = (
 				EDAB1A35264FA86A00C2C331 /* Tabbar.storyboard in Resources */,
 				EDAB1A21264FA65400C2C331 /* LaunchScreen.storyboard in Resources */,
+				EDAB1A4E264FE6A700C2C331 /* MainBottomTVC.xib in Resources */,
 				EDAB1A44264FAF7100C2C331 /* HeaderTVC.xib in Resources */,
 				EDAB1A1E264FA65400C2C331 /* Assets.xcassets in Resources */,
 				EDAB1A3D264FAA6F00C2C331 /* Detail.storyboard in Resources */,
@@ -338,6 +345,7 @@
 				EDAB1A4A264FDEE600C2C331 /* Extension+UIColor.swift in Sources */,
 				EDAB1A43264FAF7100C2C331 /* HeaderTVC.swift in Sources */,
 				EDAB1A3B264FA8B500C2C331 /* HomeVC.swift in Sources */,
+				EDAB1A4D264FE6A700C2C331 /* MainBottomTVC.swift in Sources */,
 				EDAB1A37264FA88E00C2C331 /* TabbarController.swift in Sources */,
 				EDAB1A17264FA65200C2C331 /* SceneDelegate.swift in Sources */,
 			);
