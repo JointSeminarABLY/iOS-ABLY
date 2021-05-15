@@ -31,7 +31,10 @@ extension DetailRecommendItemTVC: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DetailItemCVC.identifier, for: indexPath) as? DetailItemCVC else {
+            return UICollectionViewCell()
+        }
+        return cell
     }
 }
 
@@ -67,8 +70,8 @@ extension DetailRecommendItemTVC {
         itemCollectionView.delegate = self
         itemCollectionView.dataSource = self
         
-//        let itemNib = UINib(nibName: MainRecommendItemCVC.identifier, bundle: nil)
-//        itemCollectionView.register(itemNib, forCellWithReuseIdentifier: MainRecommendItemCVC.identifier)
+        let itemNib = UINib(nibName: DetailItemCVC.identifier, bundle: nil)
+        itemCollectionView.register(itemNib, forCellWithReuseIdentifier: DetailItemCVC.identifier)
     }
     
     private func setLabel() {
