@@ -21,10 +21,10 @@
 		EDAB1A43264FAF7100C2C331 /* HeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A41264FAF7100C2C331 /* HeaderTVC.swift */; };
 		EDAB1A44264FAF7100C2C331 /* HeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A42264FAF7100C2C331 /* HeaderTVC.xib */; };
 		EDAB1A4A264FDEE600C2C331 /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A49264FDEE600C2C331 /* Extension+UIColor.swift */; };
-		EDAB1A4D264FE6A700C2C331 /* MainBottomTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A4B264FE6A700C2C331 /* MainBottomTVC.swift */; };
-		EDAB1A4E264FE6A700C2C331 /* MainBottomTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A4C264FE6A700C2C331 /* MainBottomTVC.xib */; };
-		EDAB1A552650001E00C2C331 /* RecommendItemCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A532650001E00C2C331 /* RecommendItemCVC.swift */; };
-		EDAB1A562650001E00C2C331 /* RecommendItemCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A542650001E00C2C331 /* RecommendItemCVC.xib */; };
+		EDAB1A4D264FE6A700C2C331 /* MainRecommendItemTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A4B264FE6A700C2C331 /* MainRecommendItemTVC.swift */; };
+		EDAB1A4E264FE6A700C2C331 /* MainRecommendItemTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A4C264FE6A700C2C331 /* MainRecommendItemTVC.xib */; };
+		EDAB1A552650001E00C2C331 /* MainRecommendItemCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A532650001E00C2C331 /* MainRecommendItemCVC.swift */; };
+		EDAB1A562650001E00C2C331 /* MainRecommendItemCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A542650001E00C2C331 /* MainRecommendItemCVC.xib */; };
 		EDAB1A5926500CFF00C2C331 /* MainHotRankTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A5726500CFF00C2C331 /* MainHotRankTVC.swift */; };
 		EDAB1A5A26500CFF00C2C331 /* MainHotRankTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A5826500CFF00C2C331 /* MainHotRankTVC.xib */; };
 /* End PBXBuildFile section */
@@ -48,10 +48,10 @@
 		EDAB1A41264FAF7100C2C331 /* HeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTVC.swift; sourceTree = "<group>"; };
 		EDAB1A42264FAF7100C2C331 /* HeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTVC.xib; sourceTree = "<group>"; };
 		EDAB1A49264FDEE600C2C331 /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
-		EDAB1A4B264FE6A700C2C331 /* MainBottomTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBottomTVC.swift; sourceTree = "<group>"; };
-		EDAB1A4C264FE6A700C2C331 /* MainBottomTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainBottomTVC.xib; sourceTree = "<group>"; };
-		EDAB1A532650001E00C2C331 /* RecommendItemCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendItemCVC.swift; sourceTree = "<group>"; };
-		EDAB1A542650001E00C2C331 /* RecommendItemCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendItemCVC.xib; sourceTree = "<group>"; };
+		EDAB1A4B264FE6A700C2C331 /* MainRecommendItemTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRecommendItemTVC.swift; sourceTree = "<group>"; };
+		EDAB1A4C264FE6A700C2C331 /* MainRecommendItemTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainRecommendItemTVC.xib; sourceTree = "<group>"; };
+		EDAB1A532650001E00C2C331 /* MainRecommendItemCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRecommendItemCVC.swift; sourceTree = "<group>"; };
+		EDAB1A542650001E00C2C331 /* MainRecommendItemCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainRecommendItemCVC.xib; sourceTree = "<group>"; };
 		EDAB1A5726500CFF00C2C331 /* MainHotRankTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHotRankTVC.swift; sourceTree = "<group>"; };
 		EDAB1A5826500CFF00C2C331 /* MainHotRankTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainHotRankTVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,8 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				EDAB1A42264FAF7100C2C331 /* HeaderTVC.xib */,
-				EDAB1A4C264FE6A700C2C331 /* MainBottomTVC.xib */,
-				EDAB1A542650001E00C2C331 /* RecommendItemCVC.xib */,
+				EDAB1A4C264FE6A700C2C331 /* MainRecommendItemTVC.xib */,
+				EDAB1A542650001E00C2C331 /* MainRecommendItemCVC.xib */,
 				EDAB1A5826500CFF00C2C331 /* MainHotRankTVC.xib */,
 			);
 			path = Xibs;
@@ -219,9 +219,9 @@
 		EDAB1A45264FAF9100C2C331 /* TVC */ = {
 			isa = PBXGroup;
 			children = (
-				EDAB1A5726500CFF00C2C331 /* MainHotRankTVC.swift */,
-				EDAB1A4B264FE6A700C2C331 /* MainBottomTVC.swift */,
 				EDAB1A41264FAF7100C2C331 /* HeaderTVC.swift */,
+				EDAB1A5726500CFF00C2C331 /* MainHotRankTVC.swift */,
+				EDAB1A4B264FE6A700C2C331 /* MainRecommendItemTVC.swift */,
 			);
 			path = TVC;
 			sourceTree = "<group>";
@@ -229,7 +229,7 @@
 		EDAB1A46264FAF9400C2C331 /* CVC */ = {
 			isa = PBXGroup;
 			children = (
-				EDAB1A532650001E00C2C331 /* RecommendItemCVC.swift */,
+				EDAB1A532650001E00C2C331 /* MainRecommendItemCVC.swift */,
 			);
 			path = CVC;
 			sourceTree = "<group>";
@@ -295,8 +295,8 @@
 			files = (
 				EDAB1A35264FA86A00C2C331 /* Tabbar.storyboard in Resources */,
 				EDAB1A21264FA65400C2C331 /* LaunchScreen.storyboard in Resources */,
-				EDAB1A562650001E00C2C331 /* RecommendItemCVC.xib in Resources */,
-				EDAB1A4E264FE6A700C2C331 /* MainBottomTVC.xib in Resources */,
+				EDAB1A562650001E00C2C331 /* MainRecommendItemCVC.xib in Resources */,
+				EDAB1A4E264FE6A700C2C331 /* MainRecommendItemTVC.xib in Resources */,
 				EDAB1A5A26500CFF00C2C331 /* MainHotRankTVC.xib in Resources */,
 				EDAB1A44264FAF7100C2C331 /* HeaderTVC.xib in Resources */,
 				EDAB1A1E264FA65400C2C331 /* Assets.xcassets in Resources */,
@@ -359,9 +359,9 @@
 				EDAB1A4A264FDEE600C2C331 /* Extension+UIColor.swift in Sources */,
 				EDAB1A43264FAF7100C2C331 /* HeaderTVC.swift in Sources */,
 				EDAB1A3B264FA8B500C2C331 /* HomeVC.swift in Sources */,
-				EDAB1A552650001E00C2C331 /* RecommendItemCVC.swift in Sources */,
+				EDAB1A552650001E00C2C331 /* MainRecommendItemCVC.swift in Sources */,
 				EDAB1A5926500CFF00C2C331 /* MainHotRankTVC.swift in Sources */,
-				EDAB1A4D264FE6A700C2C331 /* MainBottomTVC.swift in Sources */,
+				EDAB1A4D264FE6A700C2C331 /* MainRecommendItemTVC.swift in Sources */,
 				EDAB1A37264FA88E00C2C331 /* TabbarController.swift in Sources */,
 				EDAB1A17264FA65200C2C331 /* SceneDelegate.swift in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  RecommendItemCVC.swift
+//  MainRecommendItemCVC.swift
 //  ABLY-iOS
 //
 //  Created by SHIN YOON AH on 2021/05/15.
@@ -7,8 +7,8 @@
 
 import UIKit
 
-class RecommendItemCVC: UICollectionViewCell {
-    static let identifier = "RecommendItemCVC"
+class MainRecommendItemCVC: UICollectionViewCell {
+    static let identifier = "MainRecommendItemCVC"
     
     @IBOutlet weak var itemImageView: UIImageView!
     @IBOutlet weak var thumbupImageView: UIImageView!
@@ -43,7 +43,7 @@ class RecommendItemCVC: UICollectionViewCell {
 }
 
 // MARK: - UI
-extension RecommendItemCVC {
+extension MainRecommendItemCVC {
     private func setUI() {
         setImageView()
         setLabel()

@@ -1,5 +1,5 @@
 //
-//  MainBottomTVC.swift
+//  MainRecommendItemTVC.swift
 //  ABLY-iOS
 //
 //  Created by SHIN YOON AH on 2021/05/15.
@@ -7,8 +7,8 @@
 
 import UIKit
 
-class MainBottomTVC: UITableViewCell {
-    static let identifier = "MainBottomTVC"
+class MainRecommendItemTVC: UITableViewCell {
+    static let identifier = "MainRecommendItemTVC"
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var itemCollectionView: UICollectionView!
@@ -23,7 +23,7 @@ class MainBottomTVC: UITableViewCell {
     }
 }
 
-extension MainBottomTVC: UICollectionViewDataSource {
+extension MainRecommendItemTVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
@@ -33,7 +33,7 @@ extension MainBottomTVC: UICollectionViewDataSource {
     }
 }
 
-extension MainBottomTVC: UICollectionViewDelegateFlowLayout {
+extension MainRecommendItemTVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = UIScreen.main.bounds.size.width - 44 - 12
         return CGSize(width: width, height: 265)
@@ -53,7 +53,7 @@ extension MainBottomTVC: UICollectionViewDelegateFlowLayout {
 }
 
 // MARK: - UI
-extension MainBottomTVC {
+extension MainRecommendItemTVC {
     private func setUI() {
         setCollectionView()
         setLabel()
