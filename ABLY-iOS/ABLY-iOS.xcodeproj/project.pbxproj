@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,7 @@
 		EDAB1A3F264FAA7D00C2C331 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A3E264FAA7D00C2C331 /* DetailVC.swift */; };
 		EDAB1A43264FAF7100C2C331 /* HeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A41264FAF7100C2C331 /* HeaderTVC.swift */; };
 		EDAB1A44264FAF7100C2C331 /* HeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A42264FAF7100C2C331 /* HeaderTVC.xib */; };
+		EDAB1A4A264FDEE600C2C331 /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A49264FDEE600C2C331 /* Extension+UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		EDAB1A3E264FAA7D00C2C331 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		EDAB1A41264FAF7100C2C331 /* HeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTVC.swift; sourceTree = "<group>"; };
 		EDAB1A42264FAF7100C2C331 /* HeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTVC.xib; sourceTree = "<group>"; };
+		EDAB1A49264FDEE600C2C331 /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +70,6 @@
 				A030D5E6B5764EE2F9FBAB07 /* Pods-ABLY-iOS.debug.xcconfig */,
 				E53B395CB799FA18786AC1F1 /* Pods-ABLY-iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -167,6 +168,7 @@
 		EDAB1A30264FA7CA00C2C331 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				EDAB1A49264FDEE600C2C331 /* Extension+UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -333,6 +335,7 @@
 			files = (
 				EDAB1A3F264FAA7D00C2C331 /* DetailVC.swift in Sources */,
 				EDAB1A15264FA65200C2C331 /* AppDelegate.swift in Sources */,
+				EDAB1A4A264FDEE600C2C331 /* Extension+UIColor.swift in Sources */,
 				EDAB1A43264FAF7100C2C331 /* HeaderTVC.swift in Sources */,
 				EDAB1A3B264FA8B500C2C331 /* HomeVC.swift in Sources */,
 				EDAB1A37264FA88E00C2C331 /* TabbarController.swift in Sources */,
