@@ -68,6 +68,12 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="hotRankCollectionView" destination="8FG-mJ-SaD" id="4P2-K4-DIf"/>
+                <outlet property="medalImageView" destination="y5D-nk-5Gv" id="u3C-JR-Mbn"/>
+                <outlet property="moreButton" destination="2JA-Q8-sUb" id="mWf-Lo-Zx7"/>
+                <outlet property="titleLabel" destination="IRL-R9-rE2" id="FDq-BX-J3m"/>
+            </connections>
             <point key="canvasLocation" x="-17.39130434782609" y="145.98214285714286"/>
         </tableViewCell>
     </objects>
