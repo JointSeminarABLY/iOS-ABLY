@@ -38,7 +38,7 @@ extension MainRecommendItemTVC: UICollectionViewDataSource {
 
 extension MainRecommendItemTVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = UIScreen.main.bounds.size.width - 44 - 12
+        let width = (UIScreen.main.bounds.size.width - 44 - 12) / 2
         return CGSize(width: width, height: 265)
     }
     
