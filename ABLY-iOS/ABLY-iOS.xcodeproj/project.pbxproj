@@ -29,6 +29,8 @@
 		EDAB1A5A26500CFF00C2C331 /* MainHotRankTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A5826500CFF00C2C331 /* MainHotRankTVC.xib */; };
 		EDAB1A5D2650163600C2C331 /* MainHotRankCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A5B2650163600C2C331 /* MainHotRankCVC.swift */; };
 		EDAB1A5E2650163600C2C331 /* MainHotRankCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A5C2650163600C2C331 /* MainHotRankCVC.xib */; };
+		EDAB1A6126501B3B00C2C331 /* DetailRecommendItemTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A5F26501B3B00C2C331 /* DetailRecommendItemTVC.swift */; };
+		EDAB1A6226501B3B00C2C331 /* DetailRecommendItemTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A6026501B3B00C2C331 /* DetailRecommendItemTVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		EDAB1A5826500CFF00C2C331 /* MainHotRankTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainHotRankTVC.xib; sourceTree = "<group>"; };
 		EDAB1A5B2650163600C2C331 /* MainHotRankCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHotRankCVC.swift; sourceTree = "<group>"; };
 		EDAB1A5C2650163600C2C331 /* MainHotRankCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainHotRankCVC.xib; sourceTree = "<group>"; };
+		EDAB1A5F26501B3B00C2C331 /* DetailRecommendItemTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecommendItemTVC.swift; sourceTree = "<group>"; };
+		EDAB1A6026501B3B00C2C331 /* DetailRecommendItemTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailRecommendItemTVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,7 @@
 				EDAB1A542650001E00C2C331 /* MainRecommendItemCVC.xib */,
 				EDAB1A5826500CFF00C2C331 /* MainHotRankTVC.xib */,
 				EDAB1A5C2650163600C2C331 /* MainHotRankCVC.xib */,
+				EDAB1A6026501B3B00C2C331 /* DetailRecommendItemTVC.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 				EDAB1A41264FAF7100C2C331 /* HeaderTVC.swift */,
 				EDAB1A5726500CFF00C2C331 /* MainHotRankTVC.swift */,
 				EDAB1A4B264FE6A700C2C331 /* MainRecommendItemTVC.swift */,
+				EDAB1A5F26501B3B00C2C331 /* DetailRecommendItemTVC.swift */,
 			);
 			path = TVC;
 			sourceTree = "<group>";
@@ -304,6 +310,7 @@
 				EDAB1A562650001E00C2C331 /* MainRecommendItemCVC.xib in Resources */,
 				EDAB1A4E264FE6A700C2C331 /* MainRecommendItemTVC.xib in Resources */,
 				EDAB1A5A26500CFF00C2C331 /* MainHotRankTVC.xib in Resources */,
+				EDAB1A6226501B3B00C2C331 /* DetailRecommendItemTVC.xib in Resources */,
 				EDAB1A44264FAF7100C2C331 /* HeaderTVC.xib in Resources */,
 				EDAB1A1E264FA65400C2C331 /* Assets.xcassets in Resources */,
 				EDAB1A3D264FAA6F00C2C331 /* Detail.storyboard in Resources */,
@@ -369,6 +376,7 @@
 				EDAB1A552650001E00C2C331 /* MainRecommendItemCVC.swift in Sources */,
 				EDAB1A5926500CFF00C2C331 /* MainHotRankTVC.swift in Sources */,
 				EDAB1A5D2650163600C2C331 /* MainHotRankCVC.swift in Sources */,
+				EDAB1A6126501B3B00C2C331 /* DetailRecommendItemTVC.swift in Sources */,
 				EDAB1A4D264FE6A700C2C331 /* MainRecommendItemTVC.swift in Sources */,
 				EDAB1A37264FA88E00C2C331 /* TabbarController.swift in Sources */,
 				EDAB1A17264FA65200C2C331 /* SceneDelegate.swift in Sources */,
