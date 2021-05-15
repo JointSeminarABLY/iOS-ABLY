@@ -9,7 +9,12 @@ import UIKit
 
 class DetailRecommendItemTVC: UITableViewCell {
     static let identifier = "DetailRecommendItemTVC"
-
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var moreButton: UIButton!
+    @IBOutlet weak var bottomView: UIView!
+    @IBOutlet weak var itemCollectionView: UICollectionView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
