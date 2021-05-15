@@ -13,6 +13,7 @@ class MainHotRankTVC: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var medalImageView: UIImageView!
     @IBOutlet weak var moreButton: UIButton!
+    @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var hotRankCollectionView: UICollectionView!
     
     override func awakeFromNib() {
@@ -63,6 +64,7 @@ extension MainHotRankTVC {
         setCollectionView()
         setLabel()
         setImage()
+        setView()
     }
     
     private func setCollectionView() {
@@ -82,5 +84,9 @@ extension MainHotRankTVC {
         // MARK: - asset 가져온 다음에 넣어주기
         moreButton.setImage(UIImage(named: "more"), for: .normal)
         medalImageView.image = UIImage(named: "medal")
+    }
+    
+    private func setView() {
+        bottomView.backgroundColor = .ablyLightGray
     }
 }
