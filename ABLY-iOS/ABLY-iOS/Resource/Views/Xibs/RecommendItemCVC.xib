@@ -94,6 +94,16 @@
                 <constraint firstAttribute="trailing" secondItem="QNv-09-NdY" secondAttribute="trailing" id="vCG-SL-Z8O"/>
             </constraints>
             <size key="customSize" width="196" height="303"/>
+            <connections>
+                <outlet property="discountLabel" destination="gAS-ZT-70t" id="pRH-yx-vq4"/>
+                <outlet property="itemImageView" destination="QNv-09-NdY" id="14O-Bb-cOh"/>
+                <outlet property="itemLabel" destination="TP1-fp-fh8" id="e0h-ci-E2d"/>
+                <outlet property="likeButton" destination="AYo-eo-XKB" id="X7j-5g-JJM"/>
+                <outlet property="priceLabel" destination="sbQ-kO-exS" id="yew-Sn-ICk"/>
+                <outlet property="reviewLabel" destination="GMl-bw-wUF" id="BB2-0u-Fns"/>
+                <outlet property="storeLabel" destination="9J3-Bp-cuW" id="q7t-PL-RZG"/>
+                <outlet property="thumbupImageView" destination="kem-7P-68D" id="DRH-2c-Tt3"/>
+            </connections>
             <point key="canvasLocation" x="98.550724637681171" y="197.20982142857142"/>
         </collectionViewCell>
     </objects>

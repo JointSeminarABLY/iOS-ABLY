@@ -52,6 +52,7 @@ extension MainBottomTVC: UICollectionViewDelegateFlowLayout {
     }
 }
 
+// MARK: - UI
 extension MainBottomTVC {
     private func setUI() {
         setCollectionView()
