@@ -69,6 +69,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="bottomView" destination="v6E-xl-9xm" id="X8Y-4X-5WX"/>
                 <outlet property="hotRankCollectionView" destination="8FG-mJ-SaD" id="4P2-K4-DIf"/>
                 <outlet property="medalImageView" destination="y5D-nk-5Gv" id="u3C-JR-Mbn"/>
                 <outlet property="moreButton" destination="2JA-Q8-sUb" id="mWf-Lo-Zx7"/>
