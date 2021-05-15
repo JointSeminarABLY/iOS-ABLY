@@ -29,7 +29,6 @@
                             <constraint firstAttribute="width" constant="24" id="DuO-S1-0Sj"/>
                             <constraint firstAttribute="height" constant="24" id="E23-0o-Xif"/>
                         </constraints>
-                        <state key="normal" title="Button"/>
                     </button>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="7tf-Nv-c1M">
                         <rect key="frame" x="2" y="201" width="87" height="20.5"/>
