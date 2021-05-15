@@ -31,7 +31,10 @@ extension MainHotRankTVC: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainHotRankCVC.identifier, for: indexPath) as? MainHotRankCVC else {
+            return UICollectionViewCell()
+        }
+        return cell
     }
 }
 
@@ -65,6 +68,9 @@ extension MainHotRankTVC {
     private func setCollectionView() {
         hotRankCollectionView.delegate = self
         hotRankCollectionView.dataSource = self
+        
+        let itemNib = UINib(nibName: MainHotRankCVC.identifier, bundle: nil)
+        hotRankCollectionView.register(itemNib, forCellWithReuseIdentifier: MainHotRankCVC.identifier)
     }
     
     private func setLabel() {
