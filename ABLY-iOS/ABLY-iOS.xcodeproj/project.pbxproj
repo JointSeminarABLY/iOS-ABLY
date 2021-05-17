@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B28DD0C84DA276758FF213A7 /* Pods_ABLY_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992F4BED2AE7F92386FE0DB0 /* Pods_ABLY_iOS.framework */; };
+		DD44C78626522AEB00C85830 /* SpecialCategoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44C78426522AEB00C85830 /* SpecialCategoryTVC.swift */; };
+		DD44C78726522AEB00C85830 /* SpecialCategoryTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD44C78526522AEB00C85830 /* SpecialCategoryTVC.xib */; };
+		DD44C78F26522E4200C85830 /* AblyCategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44C78E26522E4200C85830 /* AblyCategoryButton.swift */; };
+		DD44C799265240A800C85830 /* Extension+UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44C798265240A800C85830 /* Extension+UIStackView.swift */; };
+		DD44C79C265240FC00C85830 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44C79B265240FC00C85830 /* Extension+UIView.swift */; };
 		DDEC66D326516AD3002A82AA /* MainTopTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC66D126516AD3002A82AA /* MainTopTVC.swift */; };
 		DDEC66D426516AD3002A82AA /* MainTopTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDEC66D226516AD3002A82AA /* MainTopTVC.xib */; };
 		EDAB1A15264FA65200C2C331 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A14264FA65200C2C331 /* AppDelegate.swift */; };
@@ -42,6 +47,11 @@
 /* Begin PBXFileReference section */
 		992F4BED2AE7F92386FE0DB0 /* Pods_ABLY_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ABLY_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A030D5E6B5764EE2F9FBAB07 /* Pods-ABLY-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABLY-iOS.debug.xcconfig"; path = "Target Support Files/Pods-ABLY-iOS/Pods-ABLY-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		DD44C78426522AEB00C85830 /* SpecialCategoryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialCategoryTVC.swift; sourceTree = "<group>"; };
+		DD44C78526522AEB00C85830 /* SpecialCategoryTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpecialCategoryTVC.xib; sourceTree = "<group>"; };
+		DD44C78E26522E4200C85830 /* AblyCategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AblyCategoryButton.swift; sourceTree = "<group>"; };
+		DD44C798265240A800C85830 /* Extension+UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIStackView.swift"; sourceTree = "<group>"; };
+		DD44C79B265240FC00C85830 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
 		DDEC66D126516AD3002A82AA /* MainTopTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTopTVC.swift; sourceTree = "<group>"; };
 		DDEC66D226516AD3002A82AA /* MainTopTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTopTVC.xib; sourceTree = "<group>"; };
 		E53B395CB799FA18786AC1F1 /* Pods-ABLY-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABLY-iOS.release.xcconfig"; path = "Target Support Files/Pods-ABLY-iOS/Pods-ABLY-iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -178,6 +188,7 @@
 		EDAB1A2D264FA7BF00C2C331 /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				DD44C78526522AEB00C85830 /* SpecialCategoryTVC.xib */,
 				DDEC66D226516AD3002A82AA /* MainTopTVC.xib */,
 				EDAB1A42264FAF7100C2C331 /* HeaderTVC.xib */,
 				EDAB1A4C264FE6A700C2C331 /* MainRecommendItemTVC.xib */,
@@ -209,6 +220,9 @@
 			isa = PBXGroup;
 			children = (
 				EDAB1A49264FDEE600C2C331 /* Extension+UIColor.swift */,
+				DD44C78E26522E4200C85830 /* AblyCategoryButton.swift */,
+				DD44C798265240A800C85830 /* Extension+UIStackView.swift */,
+				DD44C79B265240FC00C85830 /* Extension+UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -250,6 +264,7 @@
 				EDAB1A5F26501B3B00C2C331 /* DetailRecommendItemTVC.swift */,
 				EDAB1A67265026E000C2C331 /* DetailSlowandItemTVC.swift */,
 				DDEC66D126516AD3002A82AA /* MainTopTVC.swift */,
+				DD44C78426522AEB00C85830 /* SpecialCategoryTVC.swift */,
 			);
 			path = TVC;
 			sourceTree = "<group>";
@@ -335,6 +350,7 @@
 				EDAB1A6A265026E000C2C331 /* DetailSlowandItemTVC.xib in Resources */,
 				EDAB1A39264FA89900C2C331 /* Home.storyboard in Resources */,
 				EDAB1A5E2650163600C2C331 /* MainHotRankCVC.xib in Resources */,
+				DD44C78726522AEB00C85830 /* SpecialCategoryTVC.xib in Resources */,
 				DDEC66D426516AD3002A82AA /* MainTopTVC.xib in Resources */,
 				EDAB1A662650227B00C2C331 /* DetailItemCVC.xib in Resources */,
 			);
@@ -395,6 +411,7 @@
 				EDAB1A43264FAF7100C2C331 /* HeaderTVC.swift in Sources */,
 				EDAB1A3B264FA8B500C2C331 /* HomeVC.swift in Sources */,
 				EDAB1A552650001E00C2C331 /* MainRecommendItemCVC.swift in Sources */,
+				DD44C78F26522E4200C85830 /* AblyCategoryButton.swift in Sources */,
 				EDAB1A69265026E000C2C331 /* DetailSlowandItemTVC.swift in Sources */,
 				EDAB1A5926500CFF00C2C331 /* MainHotRankTVC.swift in Sources */,
 				EDAB1A5D2650163600C2C331 /* MainHotRankCVC.swift in Sources */,
@@ -402,8 +419,11 @@
 				EDAB1A4D264FE6A700C2C331 /* MainRecommendItemTVC.swift in Sources */,
 				EDAB1A37264FA88E00C2C331 /* TabbarController.swift in Sources */,
 				EDAB1A17264FA65200C2C331 /* SceneDelegate.swift in Sources */,
+				DD44C79C265240FC00C85830 /* Extension+UIView.swift in Sources */,
 				EDAB1A652650227B00C2C331 /* DetailItemCVC.swift in Sources */,
+				DD44C799265240A800C85830 /* Extension+UIStackView.swift in Sources */,
 				DDEC66D326516AD3002A82AA /* MainTopTVC.swift in Sources */,
+				DD44C78626522AEB00C85830 /* SpecialCategoryTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
