@@ -16,6 +16,7 @@ enum TopItems : String{
 
 
 class MainTopTVC: UITableViewCell {
+    static public let identifier : String = "MainTopTVC"
     
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var mainSearchBar: UISearchBar!
@@ -40,11 +41,27 @@ class MainTopTVC: UITableViewCell {
         super.awakeFromNib()
         setUI()
     }
-
+    
+    
+    @IBAction func onClickTodayButton(_ sender: Any) {
+        selectedTopItem(item: .today)
+    }
+    
+    
+    @IBAction func onClickBestButton(_ sender: Any) {
+        selectedTopItem(item: .best)
+    }
+    
+    @IBAction func onClickNewButton(_ sender: Any) {
+        selectedTopItem(item: .new)
+    }
+    
+    @IBAction func onClickHotButton(_ sender: Any) {
+        selectedTopItem(item: .hotDeal)
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     func setUI(){
@@ -76,9 +93,11 @@ class MainTopTVC: UITableViewCell {
         case .today:
             todayButton.setTitleColor(.ablyBlack, for: .normal)
             todayUnderView.backgroundColor = .ablyBlack
+            
         case .best:
             bestButton.setTitleColor(.ablyBlack, for: .normal)
             bestUnderView.backgroundColor = .ablyBlack
+            
         case .new:
             newButton.setTitleColor(.ablyBlack, for: .normal)
             newUnderView.backgroundColor = .ablyBlack
