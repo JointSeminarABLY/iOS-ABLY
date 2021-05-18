@@ -66,7 +66,7 @@ class MainTopTVC: UITableViewCell {
     }
     
     func setUI(){
-        logoImageView.image = UIImage(named: "ably_logo")
+        logoImageView.image = UIImage(named: "ablyLogo")
 
         searchTextField.then { 
             $0.placeholder = "원하는 스타일 옷을 검색해보세요"
@@ -85,13 +85,14 @@ class MainTopTVC: UITableViewCell {
         
         selectedTopItem(item: .today)
         
-        mainImageView.image = UIImage(named: "Rectangle 10")
+        mainImageView.image = UIImage(named: "rectangle10")
         
     }
     
     func selectedTopItem(item : TopItems){
         [todayButton,bestButton,newButton,hotDealButton].forEach {
             $0?.setTitleColor(.ablyGray, for: .normal)
+            $0?.titleLabel?.font = .boldSystemFont(ofSize: 12)
         }
         [todayUnderView,bestUnderView,newUnderView,hotDealUnderView].forEach {
             $0?.backgroundColor = .ablyGray
