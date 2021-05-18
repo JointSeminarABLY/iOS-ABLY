@@ -32,6 +32,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ped-hY-nVv">
                                         <rect key="frame" x="0.0" y="0.0" width="132.5" height="39"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="onClickInfoButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="eb8-xi-fti"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4hH-Jg-gqs">
                                         <rect key="frame" x="0.0" y="39" width="132.5" height="2"/>
@@ -48,6 +51,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEA-NG-GCl">
                                         <rect key="frame" x="0.0" y="0.0" width="132" height="39"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="onClickReviewButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="74l-em-jBm"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wkq-an-73g">
                                         <rect key="frame" x="0.0" y="39" width="132" height="2"/>
@@ -64,6 +70,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4y-zL-XAj">
                                         <rect key="frame" x="0.0" y="0.0" width="132.5" height="39"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="onClickAskButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="O79-af-Dlj"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vbQ-Ye-EWr">
                                         <rect key="frame" x="0.0" y="39" width="132.5" height="2"/>
@@ -119,6 +128,17 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="askButton" destination="R4y-zL-XAj" id="kKT-DD-RaY"/>
+                <outlet property="askUnderView" destination="vbQ-Ye-EWr" id="1D0-PQ-wF8"/>
+                <outlet property="bannerImageView" destination="mZg-FN-kW5" id="Ifg-VR-wQK"/>
+                <outlet property="detailImageView" destination="OQA-D2-cRC" id="Tej-om-zos"/>
+                <outlet property="divderView" destination="9cj-KL-KUy" id="MFe-Hz-aGK"/>
+                <outlet property="infoButton" destination="ped-hY-nVv" id="DHn-fD-XJZ"/>
+                <outlet property="infoUnderView" destination="4hH-Jg-gqs" id="Yls-Qp-3Tv"/>
+                <outlet property="reviewButton" destination="zEA-NG-GCl" id="XUg-Fu-1Vz"/>
+                <outlet property="reviewUnderView" destination="Wkq-an-73g" id="5wf-aU-DmD"/>
+            </connections>
             <point key="canvasLocation" x="-81.884057971014499" y="195.53571428571428"/>
         </tableViewCell>
     </objects>
