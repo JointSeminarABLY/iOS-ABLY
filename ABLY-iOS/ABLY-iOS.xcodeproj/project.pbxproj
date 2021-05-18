@@ -12,13 +12,13 @@
 		DD228BCE26524DC30088F9C4 /* FashionCategoryTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD228BCC26524DC30088F9C4 /* FashionCategoryTVC.xib */; };
 		DD228BD3265250980088F9C4 /* CategoryItemCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD228BD1265250980088F9C4 /* CategoryItemCVC.swift */; };
 		DD228BD4265250980088F9C4 /* CategoryItemCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD228BD2265250980088F9C4 /* CategoryItemCVC.xib */; };
+		DD228BE3265275170088F9C4 /* MainTopTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDEC66D226516AD3002A82AA /* MainTopTVC.xib */; };
 		DD44C78626522AEB00C85830 /* SpecialCategoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44C78426522AEB00C85830 /* SpecialCategoryTVC.swift */; };
 		DD44C78726522AEB00C85830 /* SpecialCategoryTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD44C78526522AEB00C85830 /* SpecialCategoryTVC.xib */; };
 		DD44C78F26522E4200C85830 /* AblyCategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44C78E26522E4200C85830 /* AblyCategoryButton.swift */; };
 		DD44C799265240A800C85830 /* Extension+UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44C798265240A800C85830 /* Extension+UIStackView.swift */; };
 		DD44C79C265240FC00C85830 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44C79B265240FC00C85830 /* Extension+UIView.swift */; };
 		DDEC66D326516AD3002A82AA /* MainTopTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC66D126516AD3002A82AA /* MainTopTVC.swift */; };
-		DDEC66D426516AD3002A82AA /* MainTopTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDEC66D226516AD3002A82AA /* MainTopTVC.xib */; };
 		EDAB1A15264FA65200C2C331 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A14264FA65200C2C331 /* AppDelegate.swift */; };
 		EDAB1A17264FA65200C2C331 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A16264FA65200C2C331 /* SceneDelegate.swift */; };
 		EDAB1A1E264FA65400C2C331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A1D264FA65400C2C331 /* Assets.xcassets */; };
@@ -357,6 +357,7 @@
 				EDAB1A5A26500CFF00C2C331 /* MainHotRankTVC.xib in Resources */,
 				EDAB1A6226501B3B00C2C331 /* DetailRecommendItemTVC.xib in Resources */,
 				EDAB1A44264FAF7100C2C331 /* HeaderTVC.xib in Resources */,
+				DD228BE3265275170088F9C4 /* MainTopTVC.xib in Resources */,
 				EDAB1A1E264FA65400C2C331 /* Assets.xcassets in Resources */,
 				DD228BD4265250980088F9C4 /* CategoryItemCVC.xib in Resources */,
 				EDAB1A3D264FAA6F00C2C331 /* Detail.storyboard in Resources */,
@@ -365,7 +366,6 @@
 				EDAB1A39264FA89900C2C331 /* Home.storyboard in Resources */,
 				EDAB1A5E2650163600C2C331 /* MainHotRankCVC.xib in Resources */,
 				DD44C78726522AEB00C85830 /* SpecialCategoryTVC.xib in Resources */,
-				DDEC66D426516AD3002A82AA /* MainTopTVC.xib in Resources */,
 				EDAB1A662650227B00C2C331 /* DetailItemCVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,11 +15,14 @@ class CategoryItemCVC: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+
     }
     
     func setData(text : String){
         itemButton.setTitle(text, for: .normal)
     }
 
+    override func prepareForReuse() {
+        itemButton.setTitle("", for: .normal)
+    }
 }
