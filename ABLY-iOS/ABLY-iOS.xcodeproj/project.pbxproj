@@ -3,11 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		B28DD0C84DA276758FF213A7 /* Pods_ABLY_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992F4BED2AE7F92386FE0DB0 /* Pods_ABLY_iOS.framework */; };
+		DD228BCD26524DC30088F9C4 /* FashionCategoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD228BCB26524DC30088F9C4 /* FashionCategoryTVC.swift */; };
+		DD228BCE26524DC30088F9C4 /* FashionCategoryTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD228BCC26524DC30088F9C4 /* FashionCategoryTVC.xib */; };
+		DD228BD3265250980088F9C4 /* CategoryItemCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD228BD1265250980088F9C4 /* CategoryItemCVC.swift */; };
+		DD228BD4265250980088F9C4 /* CategoryItemCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD228BD2265250980088F9C4 /* CategoryItemCVC.xib */; };
+		DD228BE3265275170088F9C4 /* MainTopTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDEC66D226516AD3002A82AA /* MainTopTVC.xib */; };
+		DD44C78626522AEB00C85830 /* SpecialCategoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44C78426522AEB00C85830 /* SpecialCategoryTVC.swift */; };
+		DD44C78726522AEB00C85830 /* SpecialCategoryTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD44C78526522AEB00C85830 /* SpecialCategoryTVC.xib */; };
+		DD44C78F26522E4200C85830 /* AblyCategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44C78E26522E4200C85830 /* AblyCategoryButton.swift */; };
+		DD44C799265240A800C85830 /* Extension+UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44C798265240A800C85830 /* Extension+UIStackView.swift */; };
+		DD44C79C265240FC00C85830 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44C79B265240FC00C85830 /* Extension+UIView.swift */; };
+		DDEC66D326516AD3002A82AA /* MainTopTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC66D126516AD3002A82AA /* MainTopTVC.swift */; };
+		DDFAFE372653B70700711122 /* Extension+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFAFE362653B70700711122 /* Extension+UITextField.swift */; };
 		EDAB1A15264FA65200C2C331 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A14264FA65200C2C331 /* AppDelegate.swift */; };
 		EDAB1A17264FA65200C2C331 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A16264FA65200C2C331 /* SceneDelegate.swift */; };
 		EDAB1A1E264FA65400C2C331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A1D264FA65400C2C331 /* Assets.xcassets */; };
@@ -20,11 +32,38 @@
 		EDAB1A3F264FAA7D00C2C331 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A3E264FAA7D00C2C331 /* DetailVC.swift */; };
 		EDAB1A43264FAF7100C2C331 /* HeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A41264FAF7100C2C331 /* HeaderTVC.swift */; };
 		EDAB1A44264FAF7100C2C331 /* HeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A42264FAF7100C2C331 /* HeaderTVC.xib */; };
+		EDAB1A4A264FDEE600C2C331 /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A49264FDEE600C2C331 /* Extension+UIColor.swift */; };
+		EDAB1A4D264FE6A700C2C331 /* MainRecommendItemTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A4B264FE6A700C2C331 /* MainRecommendItemTVC.swift */; };
+		EDAB1A4E264FE6A700C2C331 /* MainRecommendItemTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A4C264FE6A700C2C331 /* MainRecommendItemTVC.xib */; };
+		EDAB1A552650001E00C2C331 /* MainRecommendItemCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A532650001E00C2C331 /* MainRecommendItemCVC.swift */; };
+		EDAB1A562650001E00C2C331 /* MainRecommendItemCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A542650001E00C2C331 /* MainRecommendItemCVC.xib */; };
+		EDAB1A5926500CFF00C2C331 /* MainHotRankTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A5726500CFF00C2C331 /* MainHotRankTVC.swift */; };
+		EDAB1A5A26500CFF00C2C331 /* MainHotRankTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A5826500CFF00C2C331 /* MainHotRankTVC.xib */; };
+		EDAB1A5D2650163600C2C331 /* MainHotRankCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A5B2650163600C2C331 /* MainHotRankCVC.swift */; };
+		EDAB1A5E2650163600C2C331 /* MainHotRankCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A5C2650163600C2C331 /* MainHotRankCVC.xib */; };
+		EDAB1A6126501B3B00C2C331 /* DetailRecommendItemTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A5F26501B3B00C2C331 /* DetailRecommendItemTVC.swift */; };
+		EDAB1A6226501B3B00C2C331 /* DetailRecommendItemTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A6026501B3B00C2C331 /* DetailRecommendItemTVC.xib */; };
+		EDAB1A652650227B00C2C331 /* DetailItemCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A632650227B00C2C331 /* DetailItemCVC.swift */; };
+		EDAB1A662650227B00C2C331 /* DetailItemCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A642650227B00C2C331 /* DetailItemCVC.xib */; };
+		EDAB1A69265026E000C2C331 /* DetailSlowandItemTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A67265026E000C2C331 /* DetailSlowandItemTVC.swift */; };
+		EDAB1A6A265026E000C2C331 /* DetailSlowandItemTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A68265026E000C2C331 /* DetailSlowandItemTVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		992F4BED2AE7F92386FE0DB0 /* Pods_ABLY_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ABLY_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A030D5E6B5764EE2F9FBAB07 /* Pods-ABLY-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABLY-iOS.debug.xcconfig"; path = "Target Support Files/Pods-ABLY-iOS/Pods-ABLY-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		DD228BCB26524DC30088F9C4 /* FashionCategoryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionCategoryTVC.swift; sourceTree = "<group>"; };
+		DD228BCC26524DC30088F9C4 /* FashionCategoryTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FashionCategoryTVC.xib; sourceTree = "<group>"; };
+		DD228BD1265250980088F9C4 /* CategoryItemCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemCVC.swift; sourceTree = "<group>"; };
+		DD228BD2265250980088F9C4 /* CategoryItemCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryItemCVC.xib; sourceTree = "<group>"; };
+		DD44C78426522AEB00C85830 /* SpecialCategoryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialCategoryTVC.swift; sourceTree = "<group>"; };
+		DD44C78526522AEB00C85830 /* SpecialCategoryTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpecialCategoryTVC.xib; sourceTree = "<group>"; };
+		DD44C78E26522E4200C85830 /* AblyCategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AblyCategoryButton.swift; sourceTree = "<group>"; };
+		DD44C798265240A800C85830 /* Extension+UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIStackView.swift"; sourceTree = "<group>"; };
+		DD44C79B265240FC00C85830 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		DDEC66D126516AD3002A82AA /* MainTopTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTopTVC.swift; sourceTree = "<group>"; };
+		DDEC66D226516AD3002A82AA /* MainTopTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTopTVC.xib; sourceTree = "<group>"; };
+		DDFAFE362653B70700711122 /* Extension+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITextField.swift"; sourceTree = "<group>"; };
 		E53B395CB799FA18786AC1F1 /* Pods-ABLY-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABLY-iOS.release.xcconfig"; path = "Target Support Files/Pods-ABLY-iOS/Pods-ABLY-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		EDAB1A11264FA65200C2C331 /* ABLY-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ABLY-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDAB1A14264FA65200C2C331 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +79,21 @@
 		EDAB1A3E264FAA7D00C2C331 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		EDAB1A41264FAF7100C2C331 /* HeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTVC.swift; sourceTree = "<group>"; };
 		EDAB1A42264FAF7100C2C331 /* HeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTVC.xib; sourceTree = "<group>"; };
+		EDAB1A49264FDEE600C2C331 /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
+		EDAB1A4B264FE6A700C2C331 /* MainRecommendItemTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRecommendItemTVC.swift; sourceTree = "<group>"; };
+		EDAB1A4C264FE6A700C2C331 /* MainRecommendItemTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainRecommendItemTVC.xib; sourceTree = "<group>"; };
+		EDAB1A532650001E00C2C331 /* MainRecommendItemCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRecommendItemCVC.swift; sourceTree = "<group>"; };
+		EDAB1A542650001E00C2C331 /* MainRecommendItemCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainRecommendItemCVC.xib; sourceTree = "<group>"; };
+		EDAB1A5726500CFF00C2C331 /* MainHotRankTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHotRankTVC.swift; sourceTree = "<group>"; };
+		EDAB1A5826500CFF00C2C331 /* MainHotRankTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainHotRankTVC.xib; sourceTree = "<group>"; };
+		EDAB1A5B2650163600C2C331 /* MainHotRankCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHotRankCVC.swift; sourceTree = "<group>"; };
+		EDAB1A5C2650163600C2C331 /* MainHotRankCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainHotRankCVC.xib; sourceTree = "<group>"; };
+		EDAB1A5F26501B3B00C2C331 /* DetailRecommendItemTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecommendItemTVC.swift; sourceTree = "<group>"; };
+		EDAB1A6026501B3B00C2C331 /* DetailRecommendItemTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailRecommendItemTVC.xib; sourceTree = "<group>"; };
+		EDAB1A632650227B00C2C331 /* DetailItemCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailItemCVC.swift; sourceTree = "<group>"; };
+		EDAB1A642650227B00C2C331 /* DetailItemCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailItemCVC.xib; sourceTree = "<group>"; };
+		EDAB1A67265026E000C2C331 /* DetailSlowandItemTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSlowandItemTVC.swift; sourceTree = "<group>"; };
+		EDAB1A68265026E000C2C331 /* DetailSlowandItemTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailSlowandItemTVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +122,6 @@
 				A030D5E6B5764EE2F9FBAB07 /* Pods-ABLY-iOS.debug.xcconfig */,
 				E53B395CB799FA18786AC1F1 /* Pods-ABLY-iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -145,7 +198,18 @@
 		EDAB1A2D264FA7BF00C2C331 /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				DD228BD2265250980088F9C4 /* CategoryItemCVC.xib */,
+				DD228BCC26524DC30088F9C4 /* FashionCategoryTVC.xib */,
+				DD44C78526522AEB00C85830 /* SpecialCategoryTVC.xib */,
+				DDEC66D226516AD3002A82AA /* MainTopTVC.xib */,
 				EDAB1A42264FAF7100C2C331 /* HeaderTVC.xib */,
+				EDAB1A4C264FE6A700C2C331 /* MainRecommendItemTVC.xib */,
+				EDAB1A542650001E00C2C331 /* MainRecommendItemCVC.xib */,
+				EDAB1A5826500CFF00C2C331 /* MainHotRankTVC.xib */,
+				EDAB1A5C2650163600C2C331 /* MainHotRankCVC.xib */,
+				EDAB1A6026501B3B00C2C331 /* DetailRecommendItemTVC.xib */,
+				EDAB1A68265026E000C2C331 /* DetailSlowandItemTVC.xib */,
+				EDAB1A642650227B00C2C331 /* DetailItemCVC.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -167,6 +231,11 @@
 		EDAB1A30264FA7CA00C2C331 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				EDAB1A49264FDEE600C2C331 /* Extension+UIColor.swift */,
+				DD44C78E26522E4200C85830 /* AblyCategoryButton.swift */,
+				DD44C798265240A800C85830 /* Extension+UIStackView.swift */,
+				DD44C79B265240FC00C85830 /* Extension+UIView.swift */,
+				DDFAFE362653B70700711122 /* Extension+UITextField.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -203,6 +272,13 @@
 			isa = PBXGroup;
 			children = (
 				EDAB1A41264FAF7100C2C331 /* HeaderTVC.swift */,
+				EDAB1A4B264FE6A700C2C331 /* MainRecommendItemTVC.swift */,
+				EDAB1A5726500CFF00C2C331 /* MainHotRankTVC.swift */,
+				EDAB1A5F26501B3B00C2C331 /* DetailRecommendItemTVC.swift */,
+				EDAB1A67265026E000C2C331 /* DetailSlowandItemTVC.swift */,
+				DDEC66D126516AD3002A82AA /* MainTopTVC.swift */,
+				DD44C78426522AEB00C85830 /* SpecialCategoryTVC.swift */,
+				DD228BCB26524DC30088F9C4 /* FashionCategoryTVC.swift */,
 			);
 			path = TVC;
 			sourceTree = "<group>";
@@ -210,6 +286,10 @@
 		EDAB1A46264FAF9400C2C331 /* CVC */ = {
 			isa = PBXGroup;
 			children = (
+				EDAB1A532650001E00C2C331 /* MainRecommendItemCVC.swift */,
+				EDAB1A5B2650163600C2C331 /* MainHotRankCVC.swift */,
+				EDAB1A632650227B00C2C331 /* DetailItemCVC.swift */,
+				DD228BD1265250980088F9C4 /* CategoryItemCVC.swift */,
 			);
 			path = CVC;
 			sourceTree = "<group>";
@@ -275,10 +355,21 @@
 			files = (
 				EDAB1A35264FA86A00C2C331 /* Tabbar.storyboard in Resources */,
 				EDAB1A21264FA65400C2C331 /* LaunchScreen.storyboard in Resources */,
+				EDAB1A562650001E00C2C331 /* MainRecommendItemCVC.xib in Resources */,
+				EDAB1A4E264FE6A700C2C331 /* MainRecommendItemTVC.xib in Resources */,
+				EDAB1A5A26500CFF00C2C331 /* MainHotRankTVC.xib in Resources */,
+				EDAB1A6226501B3B00C2C331 /* DetailRecommendItemTVC.xib in Resources */,
 				EDAB1A44264FAF7100C2C331 /* HeaderTVC.xib in Resources */,
+				DD228BE3265275170088F9C4 /* MainTopTVC.xib in Resources */,
 				EDAB1A1E264FA65400C2C331 /* Assets.xcassets in Resources */,
+				DD228BD4265250980088F9C4 /* CategoryItemCVC.xib in Resources */,
 				EDAB1A3D264FAA6F00C2C331 /* Detail.storyboard in Resources */,
+				EDAB1A6A265026E000C2C331 /* DetailSlowandItemTVC.xib in Resources */,
+				DD228BCE26524DC30088F9C4 /* FashionCategoryTVC.xib in Resources */,
 				EDAB1A39264FA89900C2C331 /* Home.storyboard in Resources */,
+				EDAB1A5E2650163600C2C331 /* MainHotRankCVC.xib in Resources */,
+				DD44C78726522AEB00C85830 /* SpecialCategoryTVC.xib in Resources */,
+				EDAB1A662650227B00C2C331 /* DetailItemCVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,10 +424,26 @@
 			files = (
 				EDAB1A3F264FAA7D00C2C331 /* DetailVC.swift in Sources */,
 				EDAB1A15264FA65200C2C331 /* AppDelegate.swift in Sources */,
+				EDAB1A4A264FDEE600C2C331 /* Extension+UIColor.swift in Sources */,
 				EDAB1A43264FAF7100C2C331 /* HeaderTVC.swift in Sources */,
 				EDAB1A3B264FA8B500C2C331 /* HomeVC.swift in Sources */,
+				EDAB1A552650001E00C2C331 /* MainRecommendItemCVC.swift in Sources */,
+				DD44C78F26522E4200C85830 /* AblyCategoryButton.swift in Sources */,
+				EDAB1A69265026E000C2C331 /* DetailSlowandItemTVC.swift in Sources */,
+				EDAB1A5926500CFF00C2C331 /* MainHotRankTVC.swift in Sources */,
+				DD228BD3265250980088F9C4 /* CategoryItemCVC.swift in Sources */,
+				EDAB1A5D2650163600C2C331 /* MainHotRankCVC.swift in Sources */,
+				EDAB1A6126501B3B00C2C331 /* DetailRecommendItemTVC.swift in Sources */,
+				EDAB1A4D264FE6A700C2C331 /* MainRecommendItemTVC.swift in Sources */,
 				EDAB1A37264FA88E00C2C331 /* TabbarController.swift in Sources */,
 				EDAB1A17264FA65200C2C331 /* SceneDelegate.swift in Sources */,
+				DD44C79C265240FC00C85830 /* Extension+UIView.swift in Sources */,
+				EDAB1A652650227B00C2C331 /* DetailItemCVC.swift in Sources */,
+				DD44C799265240A800C85830 /* Extension+UIStackView.swift in Sources */,
+				DDEC66D326516AD3002A82AA /* MainTopTVC.swift in Sources */,
+				DD228BCD26524DC30088F9C4 /* FashionCategoryTVC.swift in Sources */,
+				DD44C78626522AEB00C85830 /* SpecialCategoryTVC.swift in Sources */,
+				DDFAFE372653B70700711122 /* Extension+UITextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,7 +512,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -460,7 +567,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
