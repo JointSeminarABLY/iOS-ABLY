@@ -46,7 +46,7 @@ extension MainHotRankTVC: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        return 6
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
@@ -77,7 +77,7 @@ extension MainHotRankTVC {
     
     private func setLabel() {
         titleLabel.text = "HOT 🔥 실시간 원피스 랭킹"
-        titleLabel.font = .boldSystemFont(ofSize: 12)
+        titleLabel.font = .boldSystemFont(ofSize: 15)
     }
     
     private func setImage() {

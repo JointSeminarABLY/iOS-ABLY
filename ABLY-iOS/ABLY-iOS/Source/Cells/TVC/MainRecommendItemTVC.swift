@@ -72,6 +72,6 @@ extension MainRecommendItemTVC {
     
     private func setLabel() {
         titleLabel.text = "최성아님을 위한 추천상품"
-        titleLabel.font = .boldSystemFont(ofSize: 12)
+        titleLabel.font = .boldSystemFont(ofSize: 15)
     }
 }
