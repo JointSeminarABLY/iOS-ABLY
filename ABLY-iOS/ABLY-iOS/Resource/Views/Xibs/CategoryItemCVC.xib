@@ -24,16 +24,16 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="zTk-Oc-RuV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5dK-2f-3YX"/>
-                <constraint firstAttribute="bottom" secondItem="zTk-Oc-RuV" secondAttribute="bottom" id="iX7-rn-XNa"/>
-                <constraint firstAttribute="trailing" secondItem="zTk-Oc-RuV" secondAttribute="trailing" id="q8O-DP-XE1"/>
-                <constraint firstItem="zTk-Oc-RuV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sRe-tn-FaR"/>
+                <constraint firstItem="zTk-Oc-RuV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JiK-Ij-XTc"/>
+                <constraint firstAttribute="trailing" secondItem="zTk-Oc-RuV" secondAttribute="trailing" id="O69-QB-NgQ"/>
+                <constraint firstItem="zTk-Oc-RuV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ofO-3E-Gx6"/>
+                <constraint firstAttribute="bottom" secondItem="zTk-Oc-RuV" secondAttribute="bottom" id="tQ8-3X-8RS"/>
             </constraints>
             <size key="customSize" width="312" height="123"/>
             <connections>
                 <outlet property="itemButton" destination="zTk-Oc-RuV" id="3sh-OZ-UW5"/>
             </connections>
-            <point key="canvasLocation" x="101.44927536231884" y="158.37053571428569"/>
+            <point key="canvasLocation" x="101.44927536231884" y="157.70089285714286"/>
         </collectionViewCell>
     </objects>
 </document>
