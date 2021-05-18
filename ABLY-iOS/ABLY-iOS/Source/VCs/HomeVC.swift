@@ -47,7 +47,17 @@ extension HomeVC: UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        switch indexPath.section{
+        case 0,1,2:
+            return UITableView.automaticDimension
+        case 3:
+            return 2000
+        case 4:
+            return 300
+        default:
+            return UITableView.automaticDimension
+        }
+        
     }
 }
 
