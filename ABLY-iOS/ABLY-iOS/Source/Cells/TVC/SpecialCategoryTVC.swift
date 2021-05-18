@@ -18,32 +18,30 @@ class SpecialCategoryTVC: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        setUI()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     func setUI(){
         messageLabel.text = "김솝트님, 원하시는 특별 카테고리를 선택해보세요"
+        messageLabel.font = .boldSystemFont(ofSize: 12)
         
         eventButton.then{
             $0.categoryType = .special
+            $0.setUI()
             $0.setTitle("이벤트", for: .normal)
         }
         cosmeticButton.then{
             $0.categoryType = .special
+            $0.setUI()
             $0.setTitle("코스메틱", for: .normal)
         }
         homeDecoButton.then{
             $0.categoryType = .special
+            $0.setUI()
             $0.setTitle("홈데코", for: .normal)
         }
         
