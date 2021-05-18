@@ -15,6 +15,8 @@ enum SelectedItems : String{
 
 
 class DetailImageTVC: UITableViewCell {
+    public static let identifier = "DetailImageTVC"
+    
 
     @IBOutlet weak var infoButton: UIButton!
     @IBOutlet weak var reviewButton: UIButton!
@@ -45,6 +47,7 @@ class DetailImageTVC: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        setUI()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -68,8 +71,8 @@ class DetailImageTVC: UITableViewCell {
             $0.titleLabel?.font = .boldSystemFont(ofSize: 12)
         }
         
-        bannerImageView.image = UIImage(named: "")
-        detailImageView.image = UIImage(named: "")
+        bannerImageView.image = UIImage(named: "banner")
+        detailImageView.image = UIImage(named: "photoInformation")
         
     }
     
