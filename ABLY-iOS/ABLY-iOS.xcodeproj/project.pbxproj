@@ -20,6 +20,8 @@
 		DD44C79C265240FC00C85830 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44C79B265240FC00C85830 /* Extension+UIView.swift */; };
 		DDEC66D326516AD3002A82AA /* MainTopTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC66D126516AD3002A82AA /* MainTopTVC.swift */; };
 		DDFAFE372653B70700711122 /* Extension+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFAFE362653B70700711122 /* Extension+UITextField.swift */; };
+		DDFAFE462653C39B00711122 /* DetailImageTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFAFE442653C39B00711122 /* DetailImageTVC.swift */; };
+		DDFAFE472653C39B00711122 /* DetailImageTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDFAFE452653C39B00711122 /* DetailImageTVC.xib */; };
 		EDAB1A15264FA65200C2C331 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A14264FA65200C2C331 /* AppDelegate.swift */; };
 		EDAB1A17264FA65200C2C331 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A16264FA65200C2C331 /* SceneDelegate.swift */; };
 		EDAB1A1E264FA65400C2C331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A1D264FA65400C2C331 /* Assets.xcassets */; };
@@ -47,6 +49,7 @@
 		EDAB1A662650227B00C2C331 /* DetailItemCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A642650227B00C2C331 /* DetailItemCVC.xib */; };
 		EDAB1A69265026E000C2C331 /* DetailSlowandItemTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A67265026E000C2C331 /* DetailSlowandItemTVC.swift */; };
 		EDAB1A6A265026E000C2C331 /* DetailSlowandItemTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A68265026E000C2C331 /* DetailSlowandItemTVC.xib */; };
+		EDCB26DC2654072D00BF41D6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCB26DB2654072D00BF41D6 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +67,8 @@
 		DDEC66D126516AD3002A82AA /* MainTopTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTopTVC.swift; sourceTree = "<group>"; };
 		DDEC66D226516AD3002A82AA /* MainTopTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTopTVC.xib; sourceTree = "<group>"; };
 		DDFAFE362653B70700711122 /* Extension+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITextField.swift"; sourceTree = "<group>"; };
+		DDFAFE442653C39B00711122 /* DetailImageTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageTVC.swift; sourceTree = "<group>"; };
+		DDFAFE452653C39B00711122 /* DetailImageTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailImageTVC.xib; sourceTree = "<group>"; };
 		E53B395CB799FA18786AC1F1 /* Pods-ABLY-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABLY-iOS.release.xcconfig"; path = "Target Support Files/Pods-ABLY-iOS/Pods-ABLY-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		EDAB1A11264FA65200C2C331 /* ABLY-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ABLY-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDAB1A14264FA65200C2C331 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +99,7 @@
 		EDAB1A642650227B00C2C331 /* DetailItemCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailItemCVC.xib; sourceTree = "<group>"; };
 		EDAB1A67265026E000C2C331 /* DetailSlowandItemTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSlowandItemTVC.swift; sourceTree = "<group>"; };
 		EDAB1A68265026E000C2C331 /* DetailSlowandItemTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailSlowandItemTVC.xib; sourceTree = "<group>"; };
+		EDCB26DB2654072D00BF41D6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +204,7 @@
 		EDAB1A2D264FA7BF00C2C331 /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				DDFAFE452653C39B00711122 /* DetailImageTVC.xib */,
 				DD228BD2265250980088F9C4 /* CategoryItemCVC.xib */,
 				DD228BCC26524DC30088F9C4 /* FashionCategoryTVC.xib */,
 				DD44C78526522AEB00C85830 /* SpecialCategoryTVC.xib */,
@@ -224,6 +231,7 @@
 		EDAB1A2F264FA7C800C2C331 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EDCB26DB2654072D00BF41D6 /* Item.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -279,6 +287,7 @@
 				DDEC66D126516AD3002A82AA /* MainTopTVC.swift */,
 				DD44C78426522AEB00C85830 /* SpecialCategoryTVC.swift */,
 				DD228BCB26524DC30088F9C4 /* FashionCategoryTVC.swift */,
+				DDFAFE442653C39B00711122 /* DetailImageTVC.swift */,
 			);
 			path = TVC;
 			sourceTree = "<group>";
@@ -361,6 +370,7 @@
 				EDAB1A6226501B3B00C2C331 /* DetailRecommendItemTVC.xib in Resources */,
 				EDAB1A44264FAF7100C2C331 /* HeaderTVC.xib in Resources */,
 				DD228BE3265275170088F9C4 /* MainTopTVC.xib in Resources */,
+				DDFAFE472653C39B00711122 /* DetailImageTVC.xib in Resources */,
 				EDAB1A1E264FA65400C2C331 /* Assets.xcassets in Resources */,
 				DD228BD4265250980088F9C4 /* CategoryItemCVC.xib in Resources */,
 				EDAB1A3D264FAA6F00C2C331 /* Detail.storyboard in Resources */,
@@ -426,11 +436,13 @@
 				EDAB1A15264FA65200C2C331 /* AppDelegate.swift in Sources */,
 				EDAB1A4A264FDEE600C2C331 /* Extension+UIColor.swift in Sources */,
 				EDAB1A43264FAF7100C2C331 /* HeaderTVC.swift in Sources */,
+				EDCB26DC2654072D00BF41D6 /* Item.swift in Sources */,
 				EDAB1A3B264FA8B500C2C331 /* HomeVC.swift in Sources */,
 				EDAB1A552650001E00C2C331 /* MainRecommendItemCVC.swift in Sources */,
 				DD44C78F26522E4200C85830 /* AblyCategoryButton.swift in Sources */,
 				EDAB1A69265026E000C2C331 /* DetailSlowandItemTVC.swift in Sources */,
 				EDAB1A5926500CFF00C2C331 /* MainHotRankTVC.swift in Sources */,
+				DDFAFE462653C39B00711122 /* DetailImageTVC.swift in Sources */,
 				DD228BD3265250980088F9C4 /* CategoryItemCVC.swift in Sources */,
 				EDAB1A5D2650163600C2C331 /* MainHotRankCVC.swift in Sources */,
 				EDAB1A6126501B3B00C2C331 /* DetailRecommendItemTVC.swift in Sources */,
