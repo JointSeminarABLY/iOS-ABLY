@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="196" height="303"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QNv-09-NdY">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QNv-09-NdY">
                         <rect key="frame" x="0.0" y="0.0" width="196" height="192"/>
                         <color key="backgroundColor" red="0.62352941179999999" green="0.65490196079999996" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>

@@ -51,9 +51,9 @@ extension HomeVC: UITableViewDelegate{
         case 0,1,2:
             return UITableView.automaticDimension
         case 3:
-            return 2000
+            return 1585
         case 4:
-            return 300
+            return 243
         default:
             return UITableView.automaticDimension
         }

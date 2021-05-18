@@ -62,10 +62,11 @@ class FashionCategoryTVC: UITableViewCell {
         
         if isFolded{
             foldButton.setImage(UIImage(named: "icDown"), for: .normal)
+            foldButton.tintColor = .black
             collectionViewHeightConstraint.constant = cellHeight*3 + 21*2
-           
         }else{
-            foldButton.setImage(UIImage(named: "icDown"), for: .normal)
+            foldButton.setImage(UIImage(named: "icUp"), for: .normal)
+            foldButton.tintColor = .black
             collectionViewHeightConstraint.constant = cellHeight*5 + 21*4
         }
         

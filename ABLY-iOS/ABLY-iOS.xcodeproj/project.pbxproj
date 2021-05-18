@@ -49,6 +49,7 @@
 		EDAB1A662650227B00C2C331 /* DetailItemCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A642650227B00C2C331 /* DetailItemCVC.xib */; };
 		EDAB1A69265026E000C2C331 /* DetailSlowandItemTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A67265026E000C2C331 /* DetailSlowandItemTVC.swift */; };
 		EDAB1A6A265026E000C2C331 /* DetailSlowandItemTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A68265026E000C2C331 /* DetailSlowandItemTVC.xib */; };
+		EDCB26DC2654072D00BF41D6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCB26DB2654072D00BF41D6 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		EDAB1A642650227B00C2C331 /* DetailItemCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailItemCVC.xib; sourceTree = "<group>"; };
 		EDAB1A67265026E000C2C331 /* DetailSlowandItemTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSlowandItemTVC.swift; sourceTree = "<group>"; };
 		EDAB1A68265026E000C2C331 /* DetailSlowandItemTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailSlowandItemTVC.xib; sourceTree = "<group>"; };
+		EDCB26DB2654072D00BF41D6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +231,7 @@
 		EDAB1A2F264FA7C800C2C331 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EDCB26DB2654072D00BF41D6 /* Item.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 				EDAB1A15264FA65200C2C331 /* AppDelegate.swift in Sources */,
 				EDAB1A4A264FDEE600C2C331 /* Extension+UIColor.swift in Sources */,
 				EDAB1A43264FAF7100C2C331 /* HeaderTVC.swift in Sources */,
+				EDCB26DC2654072D00BF41D6 /* Item.swift in Sources */,
 				EDAB1A3B264FA8B500C2C331 /* HomeVC.swift in Sources */,
 				EDAB1A552650001E00C2C331 /* MainRecommendItemCVC.swift in Sources */,
 				DD44C78F26522E4200C85830 /* AblyCategoryButton.swift in Sources */,
