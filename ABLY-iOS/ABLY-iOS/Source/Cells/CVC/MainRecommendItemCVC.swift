@@ -34,7 +34,11 @@ class MainRecommendItemCVC: UICollectionViewCell {
                        satisfaction: Int) {
         itemImageView.image = UIImage(named: image)
         
-        discountLabel.text = "\(discount)%"
+        if discount != 0 {
+            discountLabel.text = "\(discount)%"
+        } else {
+            discountLabel.text = ""
+        }
         priceLabel.text = price
         storeLabel.text = store
         itemLabel.text = item
