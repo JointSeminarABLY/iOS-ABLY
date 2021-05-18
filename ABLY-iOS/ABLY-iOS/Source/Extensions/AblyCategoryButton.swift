@@ -19,18 +19,15 @@ class AblyCategoryButton: UIButton {
         super.init(frame: .zero)
         self.categoryType = colorType
     }
-    
-    @available(*, unavailable)
-    required init?(coder _: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    required init?(coder aDecoder: NSCoder) {
+            super.init(coder: aDecoder)
     }
-    
     
     func setUI(){
         titleLabel?.font = UIFont.systemFont(ofSize: 12,weight: .medium)
         
         layer.masksToBounds = true
-        layer.cornerRadius = 47.0
+        layer.cornerRadius = 20.0
         
         switch categoryType{
         case .special:
@@ -38,7 +35,7 @@ class AblyCategoryButton: UIButton {
             setTitleColor(.ablyWhite, for: .normal)
         
         case .fashion:
-            layer.borderWidth = 2.0
+            layer.borderWidth = 1.0
             layer.borderColor = UIColor.ablyBlack.cgColor
             setTitleColor(.ablyBlack, for: .normal)
             
