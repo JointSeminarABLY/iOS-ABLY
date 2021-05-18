@@ -19,6 +19,7 @@
 		DD44C799265240A800C85830 /* Extension+UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44C798265240A800C85830 /* Extension+UIStackView.swift */; };
 		DD44C79C265240FC00C85830 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44C79B265240FC00C85830 /* Extension+UIView.swift */; };
 		DDEC66D326516AD3002A82AA /* MainTopTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC66D126516AD3002A82AA /* MainTopTVC.swift */; };
+		DDFAFE372653B70700711122 /* Extension+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFAFE362653B70700711122 /* Extension+UITextField.swift */; };
 		EDAB1A15264FA65200C2C331 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A14264FA65200C2C331 /* AppDelegate.swift */; };
 		EDAB1A17264FA65200C2C331 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A16264FA65200C2C331 /* SceneDelegate.swift */; };
 		EDAB1A1E264FA65400C2C331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A1D264FA65400C2C331 /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 		DD44C79B265240FC00C85830 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
 		DDEC66D126516AD3002A82AA /* MainTopTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTopTVC.swift; sourceTree = "<group>"; };
 		DDEC66D226516AD3002A82AA /* MainTopTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTopTVC.xib; sourceTree = "<group>"; };
+		DDFAFE362653B70700711122 /* Extension+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITextField.swift"; sourceTree = "<group>"; };
 		E53B395CB799FA18786AC1F1 /* Pods-ABLY-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABLY-iOS.release.xcconfig"; path = "Target Support Files/Pods-ABLY-iOS/Pods-ABLY-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		EDAB1A11264FA65200C2C331 /* ABLY-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ABLY-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDAB1A14264FA65200C2C331 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				DD44C78E26522E4200C85830 /* AblyCategoryButton.swift */,
 				DD44C798265240A800C85830 /* Extension+UIStackView.swift */,
 				DD44C79B265240FC00C85830 /* Extension+UIView.swift */,
+				DDFAFE362653B70700711122 /* Extension+UITextField.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 				DDEC66D326516AD3002A82AA /* MainTopTVC.swift in Sources */,
 				DD228BCD26524DC30088F9C4 /* FashionCategoryTVC.swift in Sources */,
 				DD44C78626522AEB00C85830 /* SpecialCategoryTVC.swift in Sources */,
+				DDFAFE372653B70700711122 /* Extension+UITextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

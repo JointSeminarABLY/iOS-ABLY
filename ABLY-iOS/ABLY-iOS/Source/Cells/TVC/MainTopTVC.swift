@@ -19,7 +19,8 @@ class MainTopTVC: UITableViewCell {
     static public let identifier : String = "MainTopTVC"
     
     @IBOutlet weak var logoImageView: UIImageView!
-    @IBOutlet weak var mainSearchBar: UISearchBar!
+    
+    @IBOutlet weak var searchTextField: UITextField!
     
     @IBOutlet weak var hamburgerButton: UIButton!
     @IBOutlet weak var messageButton: UIButton!
@@ -66,11 +67,18 @@ class MainTopTVC: UITableViewCell {
     
     func setUI(){
         logoImageView.image = UIImage(named: "ably_logo")
+
+        searchTextField.then { 
+            $0.placeholder = "원하는 스타일 옷을 검색해보세요"
+            $0.font = .systemFont(ofSize: 8)
+            $0.backgroundColor = .ablyLightGray
+            $0.borderStyle = .none
+            $0.layer.cornerRadius = 5.0
+            $0.tintColor = .gray
+            $0.setLeftIcon(UIImage(systemName: "magnifyingglass")!)
+        }
         
-        mainSearchBar.placeholder = "원하는 스타일 옷을 검색해보세요"
-        if let textfield = mainSearchBar.value(forKey: "searchField") as? UITextField {
-            textfield.attributedPlaceholder = NSAttributedString(string: "원하는 스타일 옷을 검색해보세요", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 8),NSAttributedString.Key.foregroundColor : UIColor.ablyGray])
-               }
+
         hamburgerButton.setImage(UIImage(named: "hamburger"), for: .normal)
         messageButton.setImage(UIImage(named: "icMessage"), for: .normal)
         myBagButton.setImage(UIImage(named: "icMybag"), for: .normal)
