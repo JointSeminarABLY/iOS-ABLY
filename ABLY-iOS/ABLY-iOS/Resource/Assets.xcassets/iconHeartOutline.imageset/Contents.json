@@ -2,18 +2,18 @@
   "images" : [
     {
       "scale" : "1x",
-      "filename" : "icBack.png",
-      "idiom" : "universal"
+      "idiom" : "universal",
+      "filename" : "iconHeartOutline.png"
     },
     {
-      "filename" : "icBack@2x.png",
       "idiom" : "universal",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "iconHeartOutline@2x.png"
     },
     {
       "scale" : "3x",
       "idiom" : "universal",
-      "filename" : "icBack@3x.png"
+      "filename" : "iconHeartOutline@3x.png"
     }
   ],
   "info" : {
