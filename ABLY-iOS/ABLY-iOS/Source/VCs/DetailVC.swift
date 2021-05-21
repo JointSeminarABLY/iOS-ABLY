@@ -209,7 +209,13 @@ extension DetailVC: UITableViewDataSource {
 extension DetailVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.section{
-        case 0,1,2,3:
+        case 0:
+            return UITableView.automaticDimension
+        case 1:
+            return UITableView.automaticDimension
+        case 2:
+            return UITableView.automaticDimension
+        case 3:
             return UITableView.automaticDimension
         case 4:
             return 730
