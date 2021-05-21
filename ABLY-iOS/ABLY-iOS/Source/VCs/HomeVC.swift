@@ -32,7 +32,7 @@ class HomeVC: UIViewController {
         
         let mainHotRankNib = UINib(nibName: MainHotRankTVC.identifier, bundle: nil)
         homeTV.register(mainHotRankNib, forCellReuseIdentifier: MainHotRankTVC.identifier)
-
+        
         
     }
 }
