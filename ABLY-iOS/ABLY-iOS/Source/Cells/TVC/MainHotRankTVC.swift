@@ -90,9 +90,8 @@ extension MainHotRankTVC {
     }
     
     private func setImage() {
-        // MARK: - asset 가져온 다음에 넣어주기
-        moreButton.setImage(UIImage(named: "more"), for: .normal)
-        medalImageView.image = UIImage(named: "medal")
+        moreButton.setImage(UIImage(named: "btnSeeall"), for: .normal)
+        medalImageView.image = UIImage(named: "icMedal")
     }
     
     private func setView() {

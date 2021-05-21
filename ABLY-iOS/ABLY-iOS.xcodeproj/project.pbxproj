@@ -28,6 +28,8 @@
 		DDFAFE372653B70700711122 /* Extension+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFAFE362653B70700711122 /* Extension+UITextField.swift */; };
 		DDFAFE462653C39B00711122 /* DetailImageTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFAFE442653C39B00711122 /* DetailImageTVC.swift */; };
 		DDFAFE472653C39B00711122 /* DetailImageTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDFAFE452653C39B00711122 /* DetailImageTVC.xib */; };
+		ED92B98E2657C37300886FA9 /* ViewModalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92B98D2657C37300886FA9 /* ViewModalProtocol.swift */; };
+		ED92B9902657CB0F00886FA9 /* Extension+UITabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92B98F2657CB0F00886FA9 /* Extension+UITabbar.swift */; };
 		EDAB1A15264FA65200C2C331 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A14264FA65200C2C331 /* AppDelegate.swift */; };
 		EDAB1A17264FA65200C2C331 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A16264FA65200C2C331 /* SceneDelegate.swift */; };
 		EDAB1A1E264FA65400C2C331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDAB1A1D264FA65400C2C331 /* Assets.xcassets */; };
@@ -82,6 +84,8 @@
 		DDFAFE442653C39B00711122 /* DetailImageTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageTVC.swift; sourceTree = "<group>"; };
 		DDFAFE452653C39B00711122 /* DetailImageTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailImageTVC.xib; sourceTree = "<group>"; };
 		E53B395CB799FA18786AC1F1 /* Pods-ABLY-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABLY-iOS.release.xcconfig"; path = "Target Support Files/Pods-ABLY-iOS/Pods-ABLY-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		ED92B98D2657C37300886FA9 /* ViewModalProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModalProtocol.swift; sourceTree = "<group>"; };
+		ED92B98F2657CB0F00886FA9 /* Extension+UITabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITabbar.swift"; sourceTree = "<group>"; };
 		EDAB1A11264FA65200C2C331 /* ABLY-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ABLY-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDAB1A14264FA65200C2C331 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDAB1A16264FA65200C2C331 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +147,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		ED92B98C2657C30100886FA9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				ED92B98D2657C37300886FA9 /* ViewModalProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		EDAB1A08264FA65200C2C331 = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +185,7 @@
 		EDAB1A28264FA6E900C2C331 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				ED92B98C2657C30100886FA9 /* Protocols */,
 				EDAB1A32264FA7D100C2C331 /* Supports */,
 				EDAB1A31264FA7CD00C2C331 /* VCs */,
 				EDAB1A40264FAEE600C2C331 /* Cells */,
@@ -259,6 +272,7 @@
 				DD44C798265240A800C85830 /* Extension+UIStackView.swift */,
 				DD44C79B265240FC00C85830 /* Extension+UIView.swift */,
 				DDFAFE362653B70700711122 /* Extension+UITextField.swift */,
+				ED92B98F2657CB0F00886FA9 /* Extension+UITabbar.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -458,9 +472,11 @@
 				1AD98FC02657849700605343 /* DetailSecondTableViewCell.swift in Sources */,
 				EDAB1A4A264FDEE600C2C331 /* Extension+UIColor.swift in Sources */,
 				EDAB1A43264FAF7100C2C331 /* HeaderTVC.swift in Sources */,
+				ED92B9902657CB0F00886FA9 /* Extension+UITabbar.swift in Sources */,
 				EDCB26DC2654072D00BF41D6 /* Item.swift in Sources */,
 				EDAB1A3B264FA8B500C2C331 /* HomeVC.swift in Sources */,
 				EDAB1A552650001E00C2C331 /* MainRecommendItemCVC.swift in Sources */,
+				ED92B98E2657C37300886FA9 /* ViewModalProtocol.swift in Sources */,
 				DD44C78F26522E4200C85830 /* AblyCategoryButton.swift in Sources */,
 				EDAB1A69265026E000C2C331 /* DetailSlowandItemTVC.swift in Sources */,
 				EDAB1A5926500CFF00C2C331 /* MainHotRankTVC.swift in Sources */,

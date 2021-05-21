@@ -63,11 +63,15 @@ class DetailVC: UIViewController {
         return image
     }()
     
+    override func viewWillDisappear(_ animated: Bool) {
+        tabBarController?.tabBar.isHidden = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         registerXib()
-        setTableView()
+        setDetailVC()
         setBottomViewLayout()
         setHeaderViewLayout()
     }
@@ -92,11 +96,13 @@ class DetailVC: UIViewController {
         detailTableView.register(slowNib, forCellReuseIdentifier: DetailSlowandItemTVC.identifier)
     }
     
-    private func setTableView() {
+    private func setDetailVC() {
         detailTableView.delegate = self
         detailTableView.dataSource = self
         detailTableView.separatorStyle = .none
         detailTableView.estimatedRowHeight = 100
+        
+        tabBarController?.tabBar.isHidden = true
     }
     
     private func setBottomViewLayout() {
@@ -155,7 +161,7 @@ class DetailVC: UIViewController {
     
     @objc
     func touchUpBack() {
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
 }
 
