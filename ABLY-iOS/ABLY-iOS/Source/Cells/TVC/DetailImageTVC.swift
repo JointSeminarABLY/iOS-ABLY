@@ -31,6 +31,7 @@ class DetailImageTVC: UITableViewCell {
     @IBOutlet weak var divderView: UIView!
     
     
+    @IBOutlet weak var moreInfoButton: UIButton!
     
     @IBAction func onClickInfoButton(_ sender: Any) {
         selectedTopItem(item: .info)
@@ -48,6 +49,7 @@ class DetailImageTVC: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         setUI()
+        selectedTopItem(item: .info)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -56,20 +58,29 @@ class DetailImageTVC: UITableViewCell {
     
     
     func setUI(){
+
+        moreInfoButton.setBackgroundImage(UIImage(named: "buttonMore1"), for: .normal)
         infoButton.then {
             $0.setTitle("상품정보", for: .normal)
             $0.titleLabel?.font = .boldSystemFont(ofSize: 12)
         }
-        
+
         reviewButton.then {
             $0.setTitle("리뷰14", for: .normal)
             $0.titleLabel?.font = .boldSystemFont(ofSize: 12)
         }
-        
+
         askButton.then {
             $0.setTitle("문의/안내", for: .normal)
             $0.titleLabel?.font = .boldSystemFont(ofSize: 12)
         }
+        
+        divderView.backgroundColor = .ablyLightGray
+        
+        [infoUnderView,askUnderView,reviewUnderView].forEach {
+            $0?.backgroundColor = .ablyBlack
+        }
+        
         
         bannerImageView.image = UIImage(named: "banner")
         detailImageView.image = UIImage(named: "photoInformation")
@@ -81,7 +92,7 @@ class DetailImageTVC: UITableViewCell {
             $0?.setTitleColor(.ablyGray, for: .normal)
         }
         [infoUnderView,reviewUnderView,askUnderView].forEach {
-            $0?.backgroundColor = .ablyGray
+            $0?.backgroundColor = .ablyLightGray
         }
         
         switch item {

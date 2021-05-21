@@ -216,7 +216,7 @@ extension DetailVC: UITableViewDelegate {
         case 2:
             return UITableView.automaticDimension
         case 3:
-            return UITableView.automaticDimension
+            return (UIScreen.main.bounds.size.width)*(1360/375)
         case 4:
             return 730
         case 5:
