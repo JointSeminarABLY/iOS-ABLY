@@ -51,7 +51,7 @@ extension MainHotRankTVC: UICollectionViewDataSource {
 extension MainHotRankTVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = (UIScreen.main.bounds.size.width - 24) / 4
-        return CGSize(width: width, height: 135)
+        return CGSize(width: width, height: 155)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
