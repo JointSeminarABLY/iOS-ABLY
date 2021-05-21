@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AD98FB5265783B300605343 /* DetailTopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AD98FB4265783B300605343 /* DetailTopTableViewCell.xib */; };
+		1AD98FBC265783F300605343 /* DetailTopTableViewCell.swift 14-56-26-227.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD98FBB265783F300605343 /* DetailTopTableViewCell.swift 14-56-26-227.swift */; };
+		1AD98FC02657849700605343 /* DetailSecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD98FBE2657849700605343 /* DetailSecondTableViewCell.swift */; };
+		1AD98FC12657849700605343 /* DetailSecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AD98FBF2657849700605343 /* DetailSecondTableViewCell.xib */; };
+		1AD98FC52657855200605343 /* DetailThirdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD98FC32657855200605343 /* DetailThirdTableViewCell.swift */; };
+		1AD98FC62657855200605343 /* DetailThirdTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AD98FC42657855200605343 /* DetailThirdTableViewCell.xib */; };
 		B28DD0C84DA276758FF213A7 /* Pods_ABLY_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992F4BED2AE7F92386FE0DB0 /* Pods_ABLY_iOS.framework */; };
 		DD228BCD26524DC30088F9C4 /* FashionCategoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD228BCB26524DC30088F9C4 /* FashionCategoryTVC.swift */; };
 		DD228BCE26524DC30088F9C4 /* FashionCategoryTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD228BCC26524DC30088F9C4 /* FashionCategoryTVC.xib */; };
@@ -53,6 +59,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AD98FB4265783B300605343 /* DetailTopTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTopTableViewCell.xib; sourceTree = "<group>"; };
+		1AD98FBB265783F300605343 /* DetailTopTableViewCell.swift 14-56-26-227.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DetailTopTableViewCell.swift 14-56-26-227.swift"; sourceTree = "<group>"; };
+		1AD98FBE2657849700605343 /* DetailSecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSecondTableViewCell.swift; sourceTree = "<group>"; };
+		1AD98FBF2657849700605343 /* DetailSecondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailSecondTableViewCell.xib; sourceTree = "<group>"; };
+		1AD98FC32657855200605343 /* DetailThirdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailThirdTableViewCell.swift; sourceTree = "<group>"; };
+		1AD98FC42657855200605343 /* DetailThirdTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailThirdTableViewCell.xib; sourceTree = "<group>"; };
 		992F4BED2AE7F92386FE0DB0 /* Pods_ABLY_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ABLY_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A030D5E6B5764EE2F9FBAB07 /* Pods-ABLY-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABLY-iOS.debug.xcconfig"; path = "Target Support Files/Pods-ABLY-iOS/Pods-ABLY-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DD228BCB26524DC30088F9C4 /* FashionCategoryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionCategoryTVC.swift; sourceTree = "<group>"; };
@@ -217,6 +229,9 @@
 				EDAB1A6026501B3B00C2C331 /* DetailRecommendItemTVC.xib */,
 				EDAB1A68265026E000C2C331 /* DetailSlowandItemTVC.xib */,
 				EDAB1A642650227B00C2C331 /* DetailItemCVC.xib */,
+				1AD98FB4265783B300605343 /* DetailTopTableViewCell.xib */,
+				1AD98FBF2657849700605343 /* DetailSecondTableViewCell.xib */,
+				1AD98FC42657855200605343 /* DetailThirdTableViewCell.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -288,6 +303,9 @@
 				DD44C78426522AEB00C85830 /* SpecialCategoryTVC.swift */,
 				DD228BCB26524DC30088F9C4 /* FashionCategoryTVC.swift */,
 				DDFAFE442653C39B00711122 /* DetailImageTVC.swift */,
+				1AD98FBB265783F300605343 /* DetailTopTableViewCell.swift 14-56-26-227.swift */,
+				1AD98FBE2657849700605343 /* DetailSecondTableViewCell.swift */,
+				1AD98FC32657855200605343 /* DetailThirdTableViewCell.swift */,
 			);
 			path = TVC;
 			sourceTree = "<group>";
@@ -362,7 +380,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AD98FC12657849700605343 /* DetailSecondTableViewCell.xib in Resources */,
 				EDAB1A35264FA86A00C2C331 /* Tabbar.storyboard in Resources */,
+				1AD98FB5265783B300605343 /* DetailTopTableViewCell.xib in Resources */,
 				EDAB1A21264FA65400C2C331 /* LaunchScreen.storyboard in Resources */,
 				EDAB1A562650001E00C2C331 /* MainRecommendItemCVC.xib in Resources */,
 				EDAB1A4E264FE6A700C2C331 /* MainRecommendItemTVC.xib in Resources */,
@@ -379,6 +399,7 @@
 				EDAB1A39264FA89900C2C331 /* Home.storyboard in Resources */,
 				EDAB1A5E2650163600C2C331 /* MainHotRankCVC.xib in Resources */,
 				DD44C78726522AEB00C85830 /* SpecialCategoryTVC.xib in Resources */,
+				1AD98FC62657855200605343 /* DetailThirdTableViewCell.xib in Resources */,
 				EDAB1A662650227B00C2C331 /* DetailItemCVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +455,7 @@
 			files = (
 				EDAB1A3F264FAA7D00C2C331 /* DetailVC.swift in Sources */,
 				EDAB1A15264FA65200C2C331 /* AppDelegate.swift in Sources */,
+				1AD98FC02657849700605343 /* DetailSecondTableViewCell.swift in Sources */,
 				EDAB1A4A264FDEE600C2C331 /* Extension+UIColor.swift in Sources */,
 				EDAB1A43264FAF7100C2C331 /* HeaderTVC.swift in Sources */,
 				EDCB26DC2654072D00BF41D6 /* Item.swift in Sources */,
@@ -443,6 +465,7 @@
 				EDAB1A69265026E000C2C331 /* DetailSlowandItemTVC.swift in Sources */,
 				EDAB1A5926500CFF00C2C331 /* MainHotRankTVC.swift in Sources */,
 				DDFAFE462653C39B00711122 /* DetailImageTVC.swift in Sources */,
+				1AD98FC52657855200605343 /* DetailThirdTableViewCell.swift in Sources */,
 				DD228BD3265250980088F9C4 /* CategoryItemCVC.swift in Sources */,
 				EDAB1A5D2650163600C2C331 /* MainHotRankCVC.swift in Sources */,
 				EDAB1A6126501B3B00C2C331 /* DetailRecommendItemTVC.swift in Sources */,
@@ -456,6 +479,7 @@
 				DD228BCD26524DC30088F9C4 /* FashionCategoryTVC.swift in Sources */,
 				DD44C78626522AEB00C85830 /* SpecialCategoryTVC.swift in Sources */,
 				DDFAFE372653B70700711122 /* Extension+UITextField.swift in Sources */,
+				1AD98FBC265783F300605343 /* DetailTopTableViewCell.swift 14-56-26-227.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
