@@ -31,9 +31,7 @@ class HomeVC: UIViewController {
         homeTV.register(mainRecommendItemNib, forCellReuseIdentifier: MainRecommendItemTVC.identifier)
         
         let mainHotRankNib = UINib(nibName: MainHotRankTVC.identifier, bundle: nil)
-        homeTV.register(mainHotRankNib, forCellReuseIdentifier: MainHotRankTVC.identifier)
-        
-        
+        homeTV.register(mainHotRankNib, forCellReuseIdentifier: MainHotRankTVC.identifier)  
     }
 }
 

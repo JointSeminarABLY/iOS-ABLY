@@ -46,6 +46,22 @@ class DetailVC: UIViewController {
         label.font = .systemFont(ofSize: 13)
         return label
     }()
+    private var backButton: UIButton = {
+        let button = UIButton()
+        button.setImage(UIImage(named: "icBack"), for: .normal)
+        button.addTarget(self, action: #selector(touchUpBack), for: .touchUpInside)
+        return button
+    }()
+    private var searchImage: UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage(named: "icSearchwhite")
+        return image
+    }()
+    private var bagImage: UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage(named: "icMybagwhite")
+        return image
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +69,7 @@ class DetailVC: UIViewController {
         registerXib()
         setTableView()
         setBottomViewLayout()
+        setHeaderViewLayout()
     }
     
     private func registerXib(){
@@ -111,6 +128,35 @@ class DetailVC: UIViewController {
             make.top.equalTo(heartImage.snp.bottom).offset(2)
         }
     }
+    
+    private func setHeaderViewLayout() {
+        view.addSubview(backButton)
+        view.addSubview(searchImage)
+        view.addSubview(bagImage)
+        
+        backButton.snp.makeConstraints { make in
+            make.top.equalToSuperview().inset(47)
+            make.leading.equalToSuperview().inset(16)
+            make.height.width.equalTo(32)
+        }
+        
+        bagImage.snp.makeConstraints { make in
+            make.trailing.equalToSuperview().inset(14)
+            make.top.equalToSuperview().inset(48)
+            make.height.width.equalTo(30)
+        }
+        
+        searchImage.snp.makeConstraints { make in
+            make.top.equalTo(bagImage)
+            make.trailing.equalTo(bagImage.snp.leading).offset(2)
+            make.height.width.equalTo(30)
+        }
+    }
+    
+    @objc
+    func touchUpBack() {
+        dismiss(animated: true, completion: nil)
+    }
 }
 
 extension DetailVC: UITableViewDataSource {
@@ -166,5 +212,25 @@ extension DetailVC: UITableViewDelegate {
         default:
             return UITableView.automaticDimension
         }
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        UIView.animate(withDuration: 0.3, animations: {
+            if scrollView.contentOffset.y > 0 {
+                self.backButton.transform = CGAffineTransform(translationX: 0, y: -88)
+                self.searchImage.transform = CGAffineTransform(translationX: 0, y: -88)
+                self.bagImage.transform = CGAffineTransform(translationX: 0, y: -88)
+            }
+        })
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        UIView.animate(withDuration: 0.3, animations: {
+            if scrollView.contentOffset.y >= 0 {
+                self.backButton.transform = .identity
+                self.searchImage.transform = .identity
+                self.bagImage.transform = .identity
+            }
+        })
     }
 }
