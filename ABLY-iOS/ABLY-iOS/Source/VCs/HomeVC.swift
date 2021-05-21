@@ -31,9 +31,7 @@ class HomeVC: UIViewController {
         homeTV.register(mainRecommendItemNib, forCellReuseIdentifier: MainRecommendItemTVC.identifier)
         
         let mainHotRankNib = UINib(nibName: MainHotRankTVC.identifier, bundle: nil)
-        homeTV.register(mainHotRankNib, forCellReuseIdentifier: MainHotRankTVC.identifier)
-
-        
+        homeTV.register(mainHotRankNib, forCellReuseIdentifier: MainHotRankTVC.identifier)  
     }
 }
 
@@ -44,6 +42,10 @@ extension HomeVC: UITableViewDelegate{
         homeTV.allowsSelection = false
         homeTV.separatorStyle = .none
         homeTV.estimatedRowHeight = 100
+        
+        tabBarController?.tabBar.isHidden = false
+        tabBarController?.tabBar.barTintColor = .ablyWhite
+        navigationController?.isNavigationBarHidden = true
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -88,7 +90,7 @@ extension HomeVC: UITableViewDataSource{
             return cell
         case 3:
             guard let cell = tableView.dequeueReusableCell(withIdentifier:  MainRecommendItemTVC.identifier, for: indexPath) as? MainRecommendItemTVC else {return UITableViewCell()}
-            
+            cell.delegate = self
             return cell
         case 4:
             guard let cell = tableView.dequeueReusableCell(withIdentifier:  MainHotRankTVC.identifier, for: indexPath) as? MainHotRankTVC else {return UITableViewCell()}
@@ -105,5 +107,11 @@ extension HomeVC: UITableViewDataSource{
 extension HomeVC : FoldingProtocol{
     func reloadTV() {
         self.homeTV.reloadData()
+    }
+}
+
+extension HomeVC: ViewModalProtocol {
+    func detailViewModalDelegate(dvc: DetailVC) {
+        navigationController?.pushViewController(dvc, animated: true)
     }
 }

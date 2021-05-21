@@ -1,19 +1,19 @@
 {
   "images" : [
     {
+      "filename" : "icMedal.png",
       "scale" : "1x",
-      "filename" : "icBack.png",
       "idiom" : "universal"
     },
     {
-      "filename" : "icBack@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x"
+      "filename" : "icMedal@2x.png",
+      "scale" : "2x",
+      "idiom" : "universal"
     },
     {
+      "filename" : "icMedal@3x.png",
       "scale" : "3x",
-      "idiom" : "universal",
-      "filename" : "icBack@3x.png"
+      "idiom" : "universal"
     }
   ],
   "info" : {

@@ -18,6 +18,7 @@ class DetailItemCVC: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        setUI()
     }
 
     // MARK: - TODO : 나중에 서버 연결하면 가져올 것
@@ -55,7 +56,7 @@ extension DetailItemCVC {
     }
     
     private func setButton() {
-        // MARK: - asset 가져온 다음에 넣어주기
-        likeButton.setImage(UIImage(named: "like"), for: .normal)
+        likeButton.setImage(UIImage(named: "icHeartOutline"), for: .normal)
+        likeButton.tintColor = .white
     }
 }

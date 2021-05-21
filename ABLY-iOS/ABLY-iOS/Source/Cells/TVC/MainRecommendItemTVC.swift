@@ -14,6 +14,7 @@ class MainRecommendItemTVC: UITableViewCell {
     @IBOutlet weak var itemCollectionView: UICollectionView!
     
     private var items: [Item] = []
+    var delegate: ViewModalProtocol?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -63,6 +64,15 @@ extension MainRecommendItemTVC: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 23, left: 22, bottom: 38, right: 22)
+    }
+}
+
+extension MainRecommendItemTVC: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let dvc = UIStoryboard(name: "Detail", bundle: nil).instantiateViewController(identifier: "DetailVC") as? DetailVC else {
+            return
+        }
+        delegate?.detailViewModalDelegate(dvc: dvc)
     }
 }
 

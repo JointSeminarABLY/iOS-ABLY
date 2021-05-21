@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailTopTableViewCell" rowHeight="528" id="KGk-i7-Jjw" customClass="DetailTopTableViewCell" customModule="ABLY_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="528"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="528"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QrF-MD-rYc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yfh-B9-7P1">
+                        <rect key="frame" x="23" y="361" width="329" height="39"/>
+                        <string key="text">[기획특가/무료배송] 빌즈 썸머 밴딩코튼팬츠 - 5 color
+5 color</string>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bwa-6X-YXU">
+                        <rect key="frame" x="23" y="425" width="57" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gLi-Ax-hje">
+                        <rect key="frame" x="0.0" y="527" width="375" height="1"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmc-lV-jWM">
+                        <rect key="frame" x="23" y="462" width="328" height="46"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="tintColor" red="0.38823529411764707" green="0.56862745098039214" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="최대 50,000원 할인 쿠폰받기"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRN-Y3-Aa1">
+                        <rect key="frame" x="314" y="425" width="34" height="34"/>
+                        <state key="normal" backgroundImage="icShare"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwf-64-tYc">
+                        <rect key="frame" x="16" y="47" width="32" height="32"/>
+                        <state key="normal" image="icBack"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QgA-we-1f8">
+                        <rect key="frame" x="295" y="48" width="30" height="30"/>
+                        <state key="normal" image="icSearchwhite"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGa-Eg-Pyb">
+                        <rect key="frame" x="325" y="48" width="30" height="30"/>
+                        <state key="normal" image="icMybagwhite"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bGa-Eg-Pyb" firstAttribute="leading" secondItem="QgA-we-1f8" secondAttribute="trailing" constant="2" id="54q-9k-pv1"/>
+                    <constraint firstItem="Bwa-6X-YXU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="23" id="7iz-dF-FX8"/>
+                    <constraint firstItem="QgA-we-1f8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="48" id="BRu-M2-LTu"/>
+                    <constraint firstItem="QrF-MD-rYc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="CrM-gk-cHD"/>
+                    <constraint firstItem="Bwa-6X-YXU" firstAttribute="top" secondItem="Yfh-B9-7P1" secondAttribute="bottom" constant="6.9000000000000004" id="LO0-bz-grB"/>
+                    <constraint firstItem="Yfh-B9-7P1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="23" id="ahv-ah-rfj"/>
+                    <constraint firstItem="QrF-MD-rYc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dSZ-zA-LBX"/>
+                    <constraint firstAttribute="trailing" secondItem="yRN-Y3-Aa1" secondAttribute="trailing" constant="27" id="doI-K0-Q6e"/>
+                    <constraint firstItem="Rwf-64-tYc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="47" id="h8f-hE-iye"/>
+                    <constraint firstItem="Yfh-B9-7P1" firstAttribute="top" secondItem="QrF-MD-rYc" secondAttribute="bottom" constant="6.7000000000000002" id="im5-lb-WCQ"/>
+                    <constraint firstItem="Rwf-64-tYc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="kek-kB-5XA"/>
+                    <constraint firstAttribute="trailing" secondItem="Yfh-B9-7P1" secondAttribute="trailing" constant="23" id="lzc-R8-oit"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Yfh-B9-7P1" secondAttribute="trailing" constant="23" id="niN-kl-eaH"/>
+                    <constraint firstItem="yRN-Y3-Aa1" firstAttribute="centerY" secondItem="Bwa-6X-YXU" secondAttribute="centerY" id="qh3-UF-jEX"/>
+                    <constraint firstAttribute="trailing" secondItem="QrF-MD-rYc" secondAttribute="trailing" id="wO0-3a-vCg"/>
+                    <constraint firstItem="bGa-Eg-Pyb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="48" id="zPp-oz-obB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backButton" destination="Rwf-64-tYc" id="ziy-77-1HL"/>
+                <outlet property="cartButton" destination="bGa-Eg-Pyb" id="na6-1x-8e5"/>
+                <outlet property="couponButton" destination="lmc-lV-jWM" id="giK-cH-kHw"/>
+                <outlet property="detailImageView" destination="QrF-MD-rYc" id="hGf-HV-PlK"/>
+                <outlet property="detailTitleLabel" destination="Yfh-B9-7P1" id="CIb-93-HdG"/>
+                <outlet property="detailTitlePriceLabel" destination="Bwa-6X-YXU" id="7fV-dc-YPK"/>
+                <outlet property="searchButton" destination="QgA-we-1f8" id="Sv2-vX-64N"/>
+                <outlet property="shareButton" destination="yRN-Y3-Aa1" id="1EM-vv-KG5"/>
+            </connections>
+            <point key="canvasLocation" x="171.73913043478262" y="295.98214285714283"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icBack" width="32" height="32"/>
+        <image name="icMybagwhite" width="30" height="30"/>
+        <image name="icSearchwhite" width="30" height="30"/>
+        <image name="icShare" width="34" height="34"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
