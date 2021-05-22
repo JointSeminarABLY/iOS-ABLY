@@ -94,7 +94,7 @@ extension HomeVC: UITableViewDataSource{
             return cell
         case 4:
             guard let cell = tableView.dequeueReusableCell(withIdentifier:  MainHotRankTVC.identifier, for: indexPath) as? MainHotRankTVC else {return UITableViewCell()}
-            
+            cell.delegate = self
             return cell
            
         default:
