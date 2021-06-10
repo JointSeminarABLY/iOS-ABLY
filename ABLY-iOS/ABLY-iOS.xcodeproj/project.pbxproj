@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A60BAA8266E457C00E80B7C /* ScrollcardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A60BAA6266E457C00E80B7C /* ScrollcardCollectionViewCell.swift */; };
+		1A60BAA9266E457C00E80B7C /* ScrollcardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A60BAA7266E457C00E80B7C /* ScrollcardCollectionViewCell.xib */; };
 		1AD98FB5265783B300605343 /* DetailTopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AD98FB4265783B300605343 /* DetailTopTableViewCell.xib */; };
 		1AD98FBC265783F300605343 /* DetailTopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD98FBB265783F300605343 /* DetailTopTableViewCell.swift */; };
 		1AD98FC02657849700605343 /* DetailSecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD98FBE2657849700605343 /* DetailSecondTableViewCell.swift */; };
@@ -61,6 +63,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A60BAA6266E457C00E80B7C /* ScrollcardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollcardCollectionViewCell.swift; sourceTree = "<group>"; };
+		1A60BAA7266E457C00E80B7C /* ScrollcardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollcardCollectionViewCell.xib; sourceTree = "<group>"; };
 		1AD98FB4265783B300605343 /* DetailTopTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTopTableViewCell.xib; sourceTree = "<group>"; };
 		1AD98FBB265783F300605343 /* DetailTopTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTopTableViewCell.swift; sourceTree = "<group>"; };
 		1AD98FBE2657849700605343 /* DetailSecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSecondTableViewCell.swift; sourceTree = "<group>"; };
@@ -244,6 +248,7 @@
 				EDAB1A642650227B00C2C331 /* DetailItemCVC.xib */,
 				1AD98FB4265783B300605343 /* DetailTopTableViewCell.xib */,
 				1AD98FBF2657849700605343 /* DetailSecondTableViewCell.xib */,
+				1A60BAA7266E457C00E80B7C /* ScrollcardCollectionViewCell.xib */,
 				1AD98FC42657855200605343 /* DetailThirdTableViewCell.xib */,
 			);
 			path = Xibs;
@@ -327,6 +332,7 @@
 		EDAB1A46264FAF9400C2C331 /* CVC */ = {
 			isa = PBXGroup;
 			children = (
+				1A60BAA6266E457C00E80B7C /* ScrollcardCollectionViewCell.swift */,
 				EDAB1A532650001E00C2C331 /* MainRecommendItemCVC.swift */,
 				EDAB1A5B2650163600C2C331 /* MainHotRankCVC.swift */,
 				EDAB1A632650227B00C2C331 /* DetailItemCVC.swift */,
@@ -396,6 +402,7 @@
 			files = (
 				1AD98FC12657849700605343 /* DetailSecondTableViewCell.xib in Resources */,
 				EDAB1A35264FA86A00C2C331 /* Tabbar.storyboard in Resources */,
+				1A60BAA9266E457C00E80B7C /* ScrollcardCollectionViewCell.xib in Resources */,
 				1AD98FB5265783B300605343 /* DetailTopTableViewCell.xib in Resources */,
 				EDAB1A21264FA65400C2C331 /* LaunchScreen.storyboard in Resources */,
 				EDAB1A562650001E00C2C331 /* MainRecommendItemCVC.xib in Resources */,
@@ -492,6 +499,7 @@
 				EDAB1A652650227B00C2C331 /* DetailItemCVC.swift in Sources */,
 				DD44C799265240A800C85830 /* Extension+UIStackView.swift in Sources */,
 				DDEC66D326516AD3002A82AA /* MainTopTVC.swift in Sources */,
+				1A60BAA8266E457C00E80B7C /* ScrollcardCollectionViewCell.swift in Sources */,
 				DD228BCD26524DC30088F9C4 /* FashionCategoryTVC.swift in Sources */,
 				DD44C78626522AEB00C85830 /* SpecialCategoryTVC.swift in Sources */,
 				DDFAFE372653B70700711122 /* Extension+UITextField.swift in Sources */,
