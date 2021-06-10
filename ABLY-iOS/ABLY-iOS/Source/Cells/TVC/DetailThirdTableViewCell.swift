@@ -10,6 +10,7 @@ import UIKit
 class DetailThirdTableViewCell: UITableViewCell {
     
 
+    @IBOutlet weak var backView: UIView!
     @IBOutlet weak var deliveryinformationLabel: UILabel!
     @IBOutlet weak var deliveryfeeLavel: UILabel!
     @IBOutlet weak var deliveryperiodLabel: UILabel!
@@ -23,13 +24,18 @@ class DetailThirdTableViewCell: UITableViewCell {
     public static let identifier = "DetailThirdTableViewCell"
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        setView()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setView() {
+        backView.layer.borderWidth = 1
+        backView.layer.borderColor = UIColor.systemGray4.cgColor
     }
     
 }

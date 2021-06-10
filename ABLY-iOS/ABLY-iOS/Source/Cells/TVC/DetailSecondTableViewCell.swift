@@ -46,7 +46,7 @@ extension DetailSecondTableViewCell : UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cardCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ScrollcardCollectionViewCell", for: indexPath) as? ScrollcardCollectionViewCell else {return UICollectionViewCell() }
         
-        cardCell.setData(imageName: "rectangle322", state: "happy", description: "HI ~~~")
+        cardCell.setData(imageName: "rectangle322", state: "만족해요", description: "솔직히 기대 안 했는데 핏 좋고 정말 맘에 들었어요 또 얇아서 여름에도 잘 입고 있습니다.")
         
         return cardCell
     }
@@ -63,7 +63,7 @@ extension DetailSecondTableViewCell : UICollectionViewDelegateFlowLayout
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets.zero
+        return UIEdgeInsets.init(top: 30, left: 23, bottom: 26, right: 23)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
