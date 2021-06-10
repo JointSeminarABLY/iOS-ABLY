@@ -17,6 +17,7 @@ class MainHotRankTVC: UITableViewCell {
     @IBOutlet weak var hotRankCollectionView: UICollectionView!
     
     private var items: [Item] = []
+    var delegate: ViewModalProtocol?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -64,6 +65,15 @@ extension MainHotRankTVC: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 26, left: 24, bottom: 26, right: 24)
+    }
+}
+
+extension MainHotRankTVC: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let dvc = UIStoryboard(name: "Detail", bundle: nil).instantiateViewController(identifier: "DetailVC") as? DetailVC else {
+            return
+        }
+        delegate?.detailViewModalDelegate(dvc: dvc)
     }
 }
 

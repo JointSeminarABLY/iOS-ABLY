@@ -101,6 +101,7 @@ class DetailVC: UIViewController {
         detailTableView.dataSource = self
         detailTableView.separatorStyle = .none
         detailTableView.estimatedRowHeight = 100
+        detailTableView.contentInsetAdjustmentBehavior = .never
         
         tabBarController?.tabBar.isHidden = true
     }

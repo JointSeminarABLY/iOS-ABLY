@@ -72,6 +72,7 @@ extension MainRecommendItemTVC: UICollectionViewDelegate {
         guard let dvc = UIStoryboard(name: "Detail", bundle: nil).instantiateViewController(identifier: "DetailVC") as? DetailVC else {
             return
         }
+        
         delegate?.detailViewModalDelegate(dvc: dvc)
     }
 }
