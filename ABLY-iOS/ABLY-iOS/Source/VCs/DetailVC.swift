@@ -196,6 +196,7 @@ extension DetailVC: UITableViewDataSource {
         case 4:
             guard let cell = tableView.dequeueReusableCell(withIdentifier:  DetailRecommendItemTVC.identifier, for: indexPath) as? DetailRecommendItemTVC else {return UITableViewCell()}
             
+            
             return cell
         case 5:
             guard let cell = tableView.dequeueReusableCell(withIdentifier:  DetailSlowandItemTVC.identifier, for: indexPath) as? DetailSlowandItemTVC else {return UITableViewCell()}
