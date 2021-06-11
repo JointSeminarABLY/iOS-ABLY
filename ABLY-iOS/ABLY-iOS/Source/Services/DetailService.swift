@@ -17,16 +17,16 @@ struct DetailService {
                                      method: .get,
                                      encoding: JSONEncoding.default,
                                      headers: header)
-        
+
         dataRequest.responseData { dataResponse in
-            dump(dataResponse)
             switch dataResponse.result {
             case .success:
                 guard let statusCode = dataResponse.response?.statusCode else {return}
                 guard let value = dataResponse.value else {return}
                 let networkResult = self.judgeStatus(by: statusCode, value)
                 completion(networkResult)
-            case .failure: completion(.pathErr)
+            case .failure:
+                completion(.pathErr)
             }
         }
     }
@@ -37,7 +37,7 @@ struct DetailService {
         else { return .pathErr }
         
         switch statusCode {
-        case 200: return .success(decodedData.data ?? [])
+        case 200: return .success(decodedData.data)
         case 400: return .requestErr(decodedData.message)
         case 500: return .serverErr
         default: return .networkFail
