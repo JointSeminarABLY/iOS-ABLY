@@ -12,7 +12,7 @@ struct OnepieceModel: Codable {
     let status: Int
     let success: Bool
     let message: String
-    let data: Onepiece?
+    let data: [Onepiece]
     
     enum CodingKeys: String, CodingKey {
         case status
@@ -26,7 +26,7 @@ struct OnepieceModel: Codable {
         status = (try? values.decode(Int.self, forKey: .success)) ?? 400
         success = (try? values.decode(Bool.self, forKey: .success)) ?? false
         message = (try? values.decode(String.self, forKey: .message)) ?? ""
-        data = (try? values.decode(Onepiece.self, forKey: .data)) ?? nil
+        data = (try? values.decode([Onepiece].self, forKey: .data)) ?? []
     }
 }
 

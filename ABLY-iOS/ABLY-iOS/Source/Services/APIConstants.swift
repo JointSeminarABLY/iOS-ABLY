@@ -11,5 +11,5 @@ struct APIConstants{
     static let baseURL = "http://3.35.206.159:5000/api/products"
     
     static let productURL = baseURL + "/Product"
-    static let onepieceURL = baseURL + "/Product/OnePiece"
+    static let onepieceURL = baseURL + "/Product/Onepiece"
 }
