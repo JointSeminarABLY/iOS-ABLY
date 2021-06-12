@@ -9,24 +9,33 @@ import Foundation
 
 // MARK: - ProductModel
 struct ProductModel: Codable {
-    let status: Int
     let success: Bool
     let message: String
-    let data: [Product]
+    let data: DataClass
+    let staus: Int
     
     enum CodingKeys: String, CodingKey {
-        case status
         case success
         case message
         case data
+        case staus
     }
     
     init(from decoder : Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        status = (try? values.decode(Int.self, forKey: .success)) ?? 400
+        staus = (try? values.decode(Int.self, forKey: .staus)) ?? 400
         success = (try? values.decode(Bool.self, forKey: .success)) ?? false
         message = (try? values.decode(String.self, forKey: .message)) ?? ""
-        data = (try? values.decode([Product].self, forKey: .data)) ?? []
+        data = (try? values.decode(DataClass.self, forKey: .data)) ?? DataClass(product: [])
+    }
+}
+
+// MARK: - DataClass
+struct DataClass: Codable {
+    let product: [Product]
+
+    enum CodingKeys: String, CodingKey {
+        case product = "Product"
     }
 }
 

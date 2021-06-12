@@ -36,6 +36,8 @@
 		ED89B38F26728F1700BD89DB /* OnepieceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89B38E26728F1700BD89DB /* OnepieceModel.swift */; };
 		ED89B391267292A700BD89DB /* DetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89B390267292A700BD89DB /* DetailService.swift */; };
 		ED89B3932672938600BD89DB /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89B3922672938600BD89DB /* ProductModel.swift */; };
+		ED89B395267335F800BD89DB /* NetworkLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89B394267335F800BD89DB /* NetworkLoggerPlugin.swift */; };
+		ED89B3972673362300BD89DB /* ProductServiceMoya.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED89B3962673362300BD89DB /* ProductServiceMoya.swift */; };
 		ED92B98E2657C37300886FA9 /* ViewModalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92B98D2657C37300886FA9 /* ViewModalProtocol.swift */; };
 		ED92B9902657CB0F00886FA9 /* Extension+UITabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92B98F2657CB0F00886FA9 /* Extension+UITabbar.swift */; };
 		EDAB1A15264FA65200C2C331 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB1A14264FA65200C2C331 /* AppDelegate.swift */; };
@@ -100,6 +102,8 @@
 		ED89B38E26728F1700BD89DB /* OnepieceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnepieceModel.swift; sourceTree = "<group>"; };
 		ED89B390267292A700BD89DB /* DetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailService.swift; sourceTree = "<group>"; };
 		ED89B3922672938600BD89DB /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		ED89B394267335F800BD89DB /* NetworkLoggerPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLoggerPlugin.swift; sourceTree = "<group>"; };
+		ED89B3962673362300BD89DB /* ProductServiceMoya.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductServiceMoya.swift; sourceTree = "<group>"; };
 		ED92B98D2657C37300886FA9 /* ViewModalProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModalProtocol.swift; sourceTree = "<group>"; };
 		ED92B98F2657CB0F00886FA9 /* Extension+UITabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITabbar.swift"; sourceTree = "<group>"; };
 		EDAB1A11264FA65200C2C331 /* ABLY-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ABLY-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -273,6 +277,8 @@
 				ED89B38A26728D4F00BD89DB /* APIConstants.swift */,
 				ED89B38C26728E0F00BD89DB /* ProductService.swift */,
 				ED89B390267292A700BD89DB /* DetailService.swift */,
+				ED89B394267335F800BD89DB /* NetworkLoggerPlugin.swift */,
+				ED89B3962673362300BD89DB /* ProductServiceMoya.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -495,6 +501,7 @@
 				EDAB1A3F264FAA7D00C2C331 /* DetailVC.swift in Sources */,
 				EDAB1A15264FA65200C2C331 /* AppDelegate.swift in Sources */,
 				1AD98FC02657849700605343 /* DetailSecondTableViewCell.swift in Sources */,
+				ED89B3972673362300BD89DB /* ProductServiceMoya.swift in Sources */,
 				ED89B38F26728F1700BD89DB /* OnepieceModel.swift in Sources */,
 				EDAB1A4A264FDEE600C2C331 /* Extension+UIColor.swift in Sources */,
 				ED89B38B26728D4F00BD89DB /* APIConstants.swift in Sources */,
@@ -516,6 +523,7 @@
 				EDAB1A4D264FE6A700C2C331 /* MainRecommendItemTVC.swift in Sources */,
 				EDAB1A37264FA88E00C2C331 /* TabbarController.swift in Sources */,
 				EDAB1A17264FA65200C2C331 /* SceneDelegate.swift in Sources */,
+				ED89B395267335F800BD89DB /* NetworkLoggerPlugin.swift in Sources */,
 				DD44C79C265240FC00C85830 /* Extension+UIView.swift in Sources */,
 				EDAB1A652650227B00C2C331 /* DetailItemCVC.swift in Sources */,
 				DD44C799265240A800C85830 /* Extension+UIStackView.swift in Sources */,
