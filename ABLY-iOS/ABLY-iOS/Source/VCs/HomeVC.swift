@@ -6,13 +6,19 @@
 //
 
 import UIKit
+import Moya
 
 class HomeVC: UIViewController {
+    private let authProvider = MoyaProvider<ProductServices>(plugins: [NetworkLoggerPlugin(verbose: true)])
+    private var productModel: ProductModel?
     
     @IBOutlet weak var homeTV: UITableView!
     
+    var model: [Product] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchProduct()
         registerXib()
         setHomeVC()
     }
@@ -32,6 +38,26 @@ class HomeVC: UIViewController {
         
         let mainHotRankNib = UINib(nibName: MainHotRankTVC.identifier, bundle: nil)
         homeTV.register(mainHotRankNib, forCellReuseIdentifier: MainHotRankTVC.identifier)  
+    }
+    
+    func fetchProduct() {
+        authProvider.request(.product) { response in
+            switch response {
+            case .success(let result):
+                do {
+                    self.productModel = try result.map(ProductModel.self)
+                    self.model.append(contentsOf: self.productModel?.data.product ?? [])
+                    print("받아옴")
+                    print("-------- model 받아옴 -------")
+                    print(self.model)
+                    print("---------------------------")
+                } catch(let err) {
+                    print(err.localizedDescription)
+                }
+            case .failure(let err):
+                print(err.localizedDescription)
+            }
+        }
     }
 }
 

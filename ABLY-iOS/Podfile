@@ -10,5 +10,6 @@ target 'ABLY-iOS' do
   pod 'SnapKit', '~> 5.0.0'
   pod 'Alamofire', '~> 5.2'
   pod 'AlamofireNetworkActivityLogger', '~> 3.4'
+  pod 'Moya', '~> 14.0'
 
 end
